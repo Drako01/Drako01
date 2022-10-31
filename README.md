@@ -24,8 +24,7 @@
 
 
 <div align="center"  style="border-radius:20px"><br><a href="https://armotusitio.com">
- <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:20px"
-      border="5px solid red"/></a>
+ <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" border-radius=20px/></a>
  <br>
  <h4>Visita mi Sitio Web</h4>
  
