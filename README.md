@@ -23,7 +23,7 @@
 
 
 <div align="center"><br><a href="https://armotusitio.com">
- <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:20px"/></a>
+ <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:20px"></a>
  <br>
  <h4>Visita mi Sitio Web</h4>
  
