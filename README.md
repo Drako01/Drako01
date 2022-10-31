@@ -22,8 +22,9 @@
 
 
 
-<div align="center">[Visita mi web](https://armotusitio.com)
- <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:0.5rem"/></div>
+<div align="center"><a href="https://armotusitio.com">
+ <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:0.5rem"/></a>
+ </div>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
