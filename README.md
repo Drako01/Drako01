@@ -22,7 +22,7 @@
 [Visita mi web](https://armotusitio.com)
 
 
-<div align="center"><img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="250" style="border-radius:0.5rem"/></div>
+<div align="center"><img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" style="border-radius:0.5rem"/></div>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
