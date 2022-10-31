@@ -36,7 +36,7 @@
 <a href="https://www.linkedin.com/in/alejandro-di-stefano-74328a175/" target="blank"><img align="center" src="https://www.pngkey.com/png/detail/14-143268_file-linkedin-logo-svg-linkedin-logo-png-no.png" alt="armotusitio.com" height="30"  /></a>
 </p>
 
-- 📫 How to reach me **contacto@armotusitio.com**
+- **contacto@armotusitio.com**
 ---
 
 
