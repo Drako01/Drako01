@@ -33,7 +33,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 
-<a href="https://www.linkedin.com/in/alejandro-di-stefano-74328a175/" target="blank"><img align="center" src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1024px-Linkedin_icon.svg.png" alt="armotusitio.com" height="40" width="40" /></a>
+<a href="https://www.linkedin.com/in/alejandro-di-stefano-74328a175/" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1024px-Linkedin_icon.svg.png" alt="armotusitio.com" height="40" width="40" /></a>
 </p>
 
 - **contacto@armotusitio.com**
