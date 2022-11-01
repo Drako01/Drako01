@@ -46,7 +46,7 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Drako01&icon=2&color=6&pretty=true)](https://github-visitor-counter-pro.vercel.app)
+
 
 <!---
 Drako01/Drako01 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -56,6 +56,10 @@ You can click the Preview link to take a look at your changes.
 
  
  ![github-contribution-grid-snake](https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg)
+ 
+ ----
+ 
+ [![](https://visitcount.itsvg.in/api?id=Drako01&icon=2&color=6&pretty=true)](https://github-visitor-counter-pro.vercel.app)
  
 <!-- <p align="center"> 
   Visitor count<br>
