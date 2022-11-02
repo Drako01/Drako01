@@ -41,6 +41,7 @@
 
 ### 📊GitHub Stats :
 
+[![trophy](https://github-profile-trophy.vercel.app/?username=Drako01)](https://github.com/ryo-ma/github-profile-trophy)
 ![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
