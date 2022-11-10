@@ -1,7 +1,7 @@
 # Hello, I'm Alejandro Daniel Di Stefano.
 
 <div align="center" ><br><a href="https://armotusitio.com" target="_blank">
- <img src="https://armotusitio.com/img/Logo-Armo-tu-sitio-com.gif" height="auto" width="350" border-radius= "20px";/></a>
+ <img src="nombre-logo-blanco.png" height="auto" width="350" border-radius= "20px";/></a>
  <br>
  
  ----
