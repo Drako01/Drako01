@@ -3,7 +3,7 @@
 <div align="center" ><br><a href="https://armotusitio.com" target="_blank">
  <img src="nombre-logo-blanco.png" height="auto" width="600" border-radius= "20px";/></a>
  <br>
- 
+ </div>
  ---
 
 ### 💻 Some of the things I like to use
