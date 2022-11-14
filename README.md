@@ -1,9 +1,9 @@
 # Hello, I'm Alejandro Daniel Di Stefano.
 
 <div align="center" ><br><a href="https://drako01.github.io/portfolio/" target="_blank">
- <h3>Éste es Mi Portfolio</h3>
- <img src="nombre-logo-blanco.png" height="auto" width="600" border-radius= "20px";/>
  
+ <img src="nombre-logo-blanco.png" height="auto" width="600" border-radius= "20px";/>
+ <h3>Éste es Mi Portfolio</h3>
  </a>
  <br>
  </div>
