@@ -51,7 +51,7 @@
 
 
 ```sh
-- **contacto@armotusitio.com**
+contacto@armotusitio.com
 ```
 
 ---
