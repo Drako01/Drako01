@@ -73,9 +73,9 @@ contacto@armotusitio.com
 ### 📊GitHub Stats :
 
 
-![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&no-bg=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true&no-bg=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact&no-bg=true)
 
 ---
 
@@ -86,7 +86,7 @@ You can click the Preview link to take a look at your changes.
 --->
 
 
- [![trophy](https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox&margin-w=15&margin-h=15)](https://github.com/ryo-ma/github-profile-trophy)
+ [![trophy](https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox&margin-w=15&margin-h=15&no-bg=true)](https://github.com/ryo-ma/github-profile-trophy)
  ![github-contribution-grid-snake](https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg)
  
  ----
