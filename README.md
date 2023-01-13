@@ -86,7 +86,7 @@ You can click the Preview link to take a look at your changes.
 --->
 
 
- [![trophy](https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
+ [![trophy](https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox&margin-w=15&margin-h=15)](https://github.com/ryo-ma/github-profile-trophy)
  ![github-contribution-grid-snake](https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg)
  
  ----
