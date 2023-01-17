@@ -73,9 +73,9 @@ contacto@armotusitio.com
 ### 📊GitHub Stats :
 
 
-![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&no-bg=true&margin-w=15&margin-h=15)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true&no-bg=true&margin-w=15&margin-h=15)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact&no-bg=true&margin-w=15&margin-h=15)
+![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&no-bg=true)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true&no-bg=true)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact&no-bg=true)
 
 ---
 
