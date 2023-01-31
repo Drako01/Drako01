@@ -93,11 +93,11 @@ You can click the Preview link to take a look at your changes.
  
  [![](https://visitcount.itsvg.in/api?id=Drako01&icon=2&color=6&pretty=true)](https://github-visitor-counter-pro.vercel.app)
  
-<p align="center"> 
+<!-- <p align="center"> 
   Visitor count<br>
   
   <img src="https://profile-counter.glitch.me/Drako01/count.svg" />
-</p>
+</p> -->
 
 
 ---
