@@ -58,7 +58,7 @@
  <h4>Visita mi Sitio Web</h4>
   </div>
 
-<h3 align="left">Connect with me: &nbsp <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano-74328a175/" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1024px-Linkedin_icon.svg.png" alt="armotusitio.com" height="40" width="40" /></a>
+<h3 align="left">Connect with me: &nbsp <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano/" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1024px-Linkedin_icon.svg.png" alt="armotusitio.com" height="40" width="40" /></a>
 </h3>
 
 
@@ -93,11 +93,11 @@ You can click the Preview link to take a look at your changes.
  
  [![](https://visitcount.itsvg.in/api?id=Drako01&icon=2&color=6&pretty=true)](https://github-visitor-counter-pro.vercel.app)
  
-<!-- <p align="center"> 
+<p align="center"> 
   Visitor count<br>
   
   <img src="https://profile-counter.glitch.me/Drako01/count.svg" />
-</p> -->
+</p>
 
 
 ---
