@@ -77,6 +77,12 @@ contacto@armotusitio.com
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
 
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Drako0&show_icons=true&theme=dark&locale=es&layout=compact" alt="Drako0" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=Drako0&show_icons=true&theme=highcontrast&title_color=cfd147&locale=es" alt="Drako0" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Drako0&theme=dark" alt="Drako0" /></p>
+
 ---
 
 
