@@ -70,7 +70,7 @@ contacto@armotusitio.com
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
 
- <a href="https://github.com/Drako01><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=tokyonight"/>
+ <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=gruvbox"/>
 
 ---
 
