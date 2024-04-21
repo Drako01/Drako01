@@ -66,12 +66,9 @@ contacto@armotusitio.com
 ### 📊GitHub Stats :
 
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false"></a></p>
-
-<!--- ![](https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false)<br/> --->
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact"></a></p>
-
- <p align="center"><a href="https://github.com/Drako01"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=gruvbox"/></a></p>
+<p align="center"><a href="https://github.com/Drako01"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=gruvbox"/></a></p>
 
 ---
 
