@@ -81,10 +81,6 @@ You can click the Preview link to take a look at your changes.
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg"></a></p>
 
- <!--                                                    
- [![trophy](https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox)](https://github.com/ryo-ma/github-profile-trophy)
- ![github-contribution-grid-snake](https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg)
--->
  ----
  
  [![](https://visitcount.itsvg.in/api?id=Drako01&icon=2&color=6&pretty=true)](https://github-visitor-counter-pro.vercel.app)
