@@ -32,6 +32,7 @@
  <a href="https://www.express.com/" target="_blank" rel="Drako01"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express.com"  height="40"/> </a>
  <a href="https://reactjs.org/" target="_blank" rel="Drako01"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> 
+ <a href="https://spring.io/" target="_blank"><img src="https://play-lh.googleusercontent.com/0djHt0_6EfbN6LsLYkCyFZw_ccUuT67StKbFtISRU23SMbY6zm7qfh9j3r5IvcTKmQ=w600-h300-pc0xffffff-pd" alt="lesscss" style="max-width:100%;" width="40" ></a>
  <a href="https://nodejs.org/" target="_blank" rel="Drako01"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs"  height="40"/> </a>
  <a href="https://developer.mozilla.org/en-US/docs/Web/jQuery" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="jquery" width="40" height="40"/></a> <a href="https://www.php.net" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" style="max-width: 100%;" width="40" height="40"></a> <a href="https://www.mysql.com/" rel=""> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" style="max-width: 100%;" width="40" height="40"></a> 
  <a href="https://www.python.org" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" style="max-width: 100%;" width="40" height="40"></a> 
@@ -65,7 +66,7 @@ contacto@armotusitio.com
 
 ### 📊GitHub Stats :
 
-<p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false"></a></p>
+<p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-stats.vercel.app/api?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=true"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Drako01&theme=gruvbox&hide_border=true"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Drako01&theme=gruvbox&hide_border=true&include_all_commits=true&count_private=false&layout=compact"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=gruvbox"/></a></p>
