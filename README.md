@@ -14,7 +14,7 @@
 ![Java](https://www.svgrepo.com/show/184143/java.svg?style=flat&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=spring&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-%23DD0031.svg?style=flat&logo=angular&logoColor=white)
-![C#](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png?style=flat&logo=c-sharp&logoColor=white)
+![C#](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/24px-Logo_C_sharp.svg.png?style=flat&logo=c-sharp&logoColor=white)
 
 
 
