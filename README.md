@@ -27,11 +27,7 @@
         <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="icon" width="65" height="65" />
       </a>
       <br>Python
-    </td>
-    <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="65" height="65" alt="csharp" />
-      <br>C#
-    </td>
+    </td>    
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/java-icon.svg" width="65" height="65" alt="Laravel" />
       <br>Java
@@ -48,6 +44,10 @@
         <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
       <br>TypeScript
     </td>       
+    <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="65" height="65" alt="csharp" />
+      <br>C#
+    </td>
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" />
       <br>MySQL
@@ -156,8 +156,8 @@
       <br>VsCode
     </td>
               <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=wordpress" width="48" height="48" alt="WordPress" />
-      <br>WordPress
+        <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="WordPress" />
+      <br>Postman
     </td>
               <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
