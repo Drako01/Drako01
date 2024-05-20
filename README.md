@@ -45,14 +45,14 @@
       <br>Django
     </td>
     </td>
-    <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
-      <br>Pytorch
+ <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
+      <br>JavaScript
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="nginx" width="65" height="65" />
-      <br>Nginx
-    </td>
+        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
+      <br>TypeScript
+    </td>    
     <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
       <br>FastAPI
@@ -64,12 +64,12 @@
   </tr>
   <tr>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" />
-      <br>JavaScript
+        <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
+      <br>Pytorch
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="icon" width="65" height="65" />
-      <br>TypeScript
+        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="nginx" width="65" height="65" />
+      <br>Nginx
     </td>
     <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" alt="MongoDB" />
