@@ -121,12 +121,12 @@
       <br>SpringBoot
     </td>    
    <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
-      <br>Pytorch
+        <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
+      <br>Less
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="nginx" width="65" height="65" />
-      <br>Nginx
+        <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="icon" width="48" height="48" />
+      <br>Sass
     </td>
     <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="tailwind" />
@@ -159,15 +159,14 @@
         <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="WordPress" />
       <br>Postman
     </td>
-              <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
-      <br>Less
+  <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
+      <br>Pytorch
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="icon" width="48" height="48" />
-      <br>Sass
-    </td>
-    </td>
+        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="nginx" width="65" height="65" />
+      <br>Nginx
+    </td>            
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/graphql-icon.svg" width="48" height="48" alt="MySQL" />
       <br>GraphQL
