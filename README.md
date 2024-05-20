@@ -66,14 +66,14 @@
         <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
       <br>HTML5
     </td>
+   <td align="center" width="96">
+        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="icon" width="65" height="65" />
+      <br>CSS 3
+    </td>
     <td align="center"  width="96">
         <img src="https://skillicons.dev/icons?i=bootstrap" width="48" height="48" alt="bootstrap" />
       <br>Bootstrap
-    </td>
-    <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
-      <br>FastAPI
-    </td>
+    </td>    
     <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=express" width="65" height="65" alt="Express" />
       <br>Express
@@ -111,16 +111,15 @@
     <td align="center" width="96"> 
         <img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" width="48" height="48" alt="Git" />
       <br>Git
-    </td>    
+    </td>   
    <td align="center" width="96">
-        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="icon" width="65" height="65" />
-      <br>CSS 3
-    </td>
+        <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
+      <br>FastAPI
+    </td>   
     <td align="center"  width="96">
-        <img src="https://skillicons.dev/icons?i=rails" width="48" height="48" alt="Rails" />
-      <br>Rails
-    </td>
-    
+        <img src="https://play-lh.googleusercontent.com/K9Jf-N8RWHDw2IZSY_vjSfIVm2X6jGN9riRIAK9nl_BgJxpYK2VQWQl-yPlCtBUTNasw" width="48" height="48" alt="Rails" />
+      <br>Spring Boot
+    </td>    
    <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
       <br>Pytorch
