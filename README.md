@@ -118,7 +118,7 @@
     </td>   
     <td align="center"  width="96">
         <img src="https://play-lh.googleusercontent.com/K9Jf-N8RWHDw2IZSY_vjSfIVm2X6jGN9riRIAK9nl_BgJxpYK2VQWQl-yPlCtBUTNasw" width="48" height="48" alt="Rails" />
-      <br>Spring Boot
+      <br>SpringBoot
     </td>    
    <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Laravel" />
@@ -148,8 +148,8 @@
       </td>
       </td>
     <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=tensorflow" width="65" height="65" alt="tensorflow" />
-      <br>Tensorflow
+        <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" alt="tensorflow" />
+      <br>Angular
     </td>
             <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VsCode" />
@@ -160,8 +160,8 @@
       <br>WordPress
     </td>
               <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=webflow" width="48" height="48" alt="Webflow" />
-      <br>Webflow
+        <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
+      <br>Less
     </td>
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="icon" width="48" height="48" />
