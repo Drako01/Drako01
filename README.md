@@ -100,10 +100,10 @@
     </td>
   </tr>
   <tr>
-    <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" />
-      <br>AWS
-    </td>
+    <td align="center"  width="96">
+        <img src="https://play-lh.googleusercontent.com/K9Jf-N8RWHDw2IZSY_vjSfIVm2X6jGN9riRIAK9nl_BgJxpYK2VQWQl-yPlCtBUTNasw" width="48" height="48" alt="Rails" />
+      <br>SpringBoot
+    </td> 
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" />
       <br>Github
@@ -115,11 +115,11 @@
    <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
       <br>FastAPI
-    </td>   
-    <td align="center"  width="96">
-        <img src="https://play-lh.googleusercontent.com/K9Jf-N8RWHDw2IZSY_vjSfIVm2X6jGN9riRIAK9nl_BgJxpYK2VQWQl-yPlCtBUTNasw" width="48" height="48" alt="Rails" />
-      <br>SpringBoot
-    </td>    
+    </td>        
+    <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" />
+      <br>AWS
+    </td>
    <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
       <br>Less
