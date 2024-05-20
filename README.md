@@ -113,14 +113,6 @@
       <br>Git
     </td>   
    <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
-      <br>FastAPI
-    </td>        
-    <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" />
-      <br>AWS
-    </td>
-   <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Webflow" />
       <br>Less
     </td>
@@ -128,6 +120,14 @@
         <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="icon" width="48" height="48" />
       <br>Sass
     </td>
+   <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
+      <br>FastAPI
+    </td>        
+    <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" />
+      <br>AWS
+    </td>   
     <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="tailwind" />
       <br>Tailwind
@@ -138,20 +138,11 @@
     </td>
   </tr>
  <tr>
-      <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="MongoDB" />
-      <br>Go
-    </td>
-        <td align="center" width="96">
-        <img src="https://skillicons.dev/icons?i=ruby" width="48" height="48" alt="Ruby" />
-      <br>Ruby
-      </td>
-      </td>
-    <td align="center" width="96">
+  <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" alt="tensorflow" />
       <br>Angular
-    </td>
-            <td align="center" width="96">
+    </td>  
+      <td align="center" width="96">
         <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VsCode" />
       <br>VsCode
     </td>
@@ -175,6 +166,14 @@
         <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
       <br>PostgreSQL
     </td>
+  <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="MongoDB" />
+      <br>Go
+    </td>
+        <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=ruby" width="48" height="48" alt="Ruby" />
+      <br>Ruby
+      </td>
  </tr>
 </table>
 
