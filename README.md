@@ -11,9 +11,10 @@
 
 ### 💻 Sumate a nuestra comunidad en 
 <p align="center"> 
- <a href="https://discord.com/invite/QR3yyqvy" target="_blank" rel="noreferrer"> <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b52aa9e99b832574a53_full_logo_blurple_RGB.png" alt="Discord"  height="40"/> </a> 
+ <a href="https://discord.com/invite/QR3yyqvy" target="_blank" rel="noreferrer"> <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b52aa9e99b832574a53_full_logo_blurple_RGB.png" alt="Discord"  height="40"/> 
  <br><br>
  <img src="logo.png" alt="Discord"  height="140"/>
+  </a> 
 </p>
 
 
