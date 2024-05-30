@@ -23,157 +23,8 @@
 
 <h3 align="left">Languages and Tools:</h3>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <div style="margin: 10px; text-align: center;">
-    <a href="#macropower-tech">
-      <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-    </a>
-    <br>Python
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/java-icon.svg" width="65" height="65" alt="Java" />
-    <br>Java
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=php" width="48" height="48" alt="PHP" />
-    <br>PHP
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="65" height="65" />
-    <br>JavaScript
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="65" height="65" />
-    <br>TypeScript
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/csharp-icon.svg" width="65" height="65" alt="C#" />
-    <br>C#
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
-    <br>MySQL
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=mongodb" width="65" height="65" alt="MongoDB" />
-    <br>MongoDB
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-    <br>Docker
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=html" width="48" height="48" alt="HTML5" />
-    <br>HTML5
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" width="65" height="65" />
-    <br>CSS 3
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=bootstrap" width="48" height="48" alt="Bootstrap" />
-    <br>Bootstrap
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=express" width="65" height="65" alt="Express" />
-    <br>Express
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-    <br>React
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=nodejs" width="65" height="65" alt="NodeJS" />
-    <br>NodeJS
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=jquery" width="48" height="48" alt="jQuery" />
-    <br>jQuery
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=laravel" width="48" height="48" alt="Laravel" />
-    <br>Laravel
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/django-icon.svg" alt="Django" width="65" height="65" />
-    <br>Django
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://play-lh.googleusercontent.com/K9Jf-N8RWHDw2IZSY_vjSfIVm2X6jGN9riRIAK9nl_BgJxpYK2VQWQl-yPlCtBUTNasw" width="48" height="48" alt="SpringBoot" />
-    <br>SpringBoot
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-    <br>GitHub
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" width="48" height="48" alt="Git" />
-    <br>Git
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=less" width="48" height="48" alt="Less" />
-    <br>Less
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="Sass" width="48" height="48" />
-    <br>Sass
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=fastapi" width="65" height="65" alt="FastAPI" />
-    <br>FastAPI
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
-    <br>AWS
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
-    <br>Tailwind
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=nextjs" width="65" height="65" alt="NextJS" />
-    <br>NextJS
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=angular" width="65" height="65" alt="Angular" />
-    <br>Angular
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=vscode" width="48" height="48" alt="VsCode" />
-    <br>VsCode
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="Postman" />
-    <br>Postman
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=pytorch" width="65" height="65" alt="Pytorch" />
-    <br>Pytorch
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
-    <br>Nginx
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://techstack-generator.vercel.app/graphql-icon.svg" width="48" height="48" alt="GraphQL" />
-    <br>GraphQL
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
-    <br>PostgreSQL
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=go" width="48" height="48" alt="Go" />
-    <br>Go
-  </div>
-  <div style="margin: 10px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=ruby" width="48" height="48" alt="Ruby" />
-    <br>Ruby
-  </div>
-</div>
 
-
-<!-- <table align="center" style="display: flex;">
+<table align="center">
   <tr>
     <td align="center" width="96">
       <a href="#macropower-tech">
@@ -328,7 +179,7 @@
       <br>Ruby
       </td>
  </tr>
-</table> -->
+</table>
 
 
 <div align="left" ><br>
