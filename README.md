@@ -214,13 +214,7 @@ contacto@armotusitio.com
 
 
 ### 🔝 Top Contributed Repo
-<p align="center">
-<a href="https://github.com/Drako01"><img src="https://github-contributor-stats.vercel.app/api?username=Drako01&limit=5&theme=gruvbox&combine_all_yearly_contributions=true"></a></p>
- 
-![](https://github-contributor-stats.vercel.app/api?username=Drako01&limit=5&theme=gruvbox&combine_all_yearly_contributions=true)
-
-
-
+<p align="center"><a href="https://github.com/Drako01"><img src="https://github-contributor-stats.vercel.app/api?username=Drako01&limit=5&theme=gruvbox&combine_all_yearly_contributions=true"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox"></a></p>
 <p align="center"><a href="https://github.com/Drako01"><img src="https://user-images.githubusercontent.com/90142173/154796318-e529fdc7-2132-4ce7-8417-06b71cf02506.svg"></a></p>
 
