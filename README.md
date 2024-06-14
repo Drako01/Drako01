@@ -1,5 +1,6 @@
-# Hello <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png" alt="Git" width=32/>... 
-# I'm Alejandro Daniel Di Stefano.
+<p align="center"> <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png" alt="Git" width=64/></p>
+
+# Hello, I'm Alejandro Daniel Di Stefano.
 
 <div align="center" ><br><a href="https://drako01.github.io/portfolio/" target="_blank"> 
  <img src="nombre-logo-blanco.png" height="auto" width="600" border-radius= "20px";/> 
