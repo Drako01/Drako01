@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png" alt="Git" width=64/></p>
+<p align="center"> <img src="https://techcrunch.com/wp-content/uploads/2010/07/github-logo.png" alt="Git" width=128/></p>
 
 # Hello, I'm Alejandro Daniel Di Stefano.
 
