@@ -18,7 +18,7 @@
 
 ## Professional Overview
 
-- Backend Ssr at Zelcar Games, delivering resilient backend services and internal tooling for game operations.
+- Backend Ssr, delivering resilient backend services and internal tooling for game operations.
 - Backend specialist with production experience across MERN/MEAN stacks and PHP, Go, Java, and Python ecosystems.
 - Cloud-native practitioner working with Google Cloud Platform, Google Kubernetes Engine, Terraform, and containerized workloads.
 - Technical instructor for web technologies and object-oriented programming, designing practical curriculum for emerging developers.
