@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://distefano-alejandro.vercel.app/">Portfolio</a> ·
-  <a href="https://armotusitio.com.ar">Armotu Studio</a> ·
+  <a href="https://armotusitio.com.ar">ArmotuSitio.com Studio</a> ·
   <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano/">LinkedIn</a>
 </p>
 
@@ -83,7 +83,7 @@ engineering.
 
 | Build | What it shows |
 | --- | --- |
-| [Armotu Studio](https://armotusitio.com.ar) | Product engineering, business workflows, delivery thinking, and client-facing execution. |
+| [ArmotuSitio.com Studio](https://armotusitio.com.ar) | Product engineering, business workflows, delivery thinking, and client-facing execution. |
 | [Personal portfolio](https://distefano-alejandro.vercel.app/) | Full stack presentation, frontend polish, deployability, and professional positioning. |
 | Backend and admin systems | APIs, RBAC, queues, exports, dashboards, data flows, and internal operational tools. |
 | Teaching work | Web development, OOP, code review habits, and practical engineering mentorship. |
@@ -128,7 +128,7 @@ behind the product.
 | Stage | Focus | What it added to my engineering work |
 | --- | --- | --- |
 | 2017 | Web foundations | HTML, CSS, JavaScript, PHP, SEO, and the first step into building for the web. |
-| 2019-present | ArmoTuSitio and freelance web work | End-to-end websites, e-commerce, admin panels, SEO, performance, and client delivery. |
+| 2019-present | ArmotuSitio.com Studio and freelance web work | End-to-end websites, e-commerce, admin panels, SEO, performance, and client delivery. |
 | 2021-2023 | Full stack training | Structured growth across web development, Python, PHP, JavaScript, React, and backend foundations. |
 | 2022-present | CoderHouse technical instructor | Teaching, mentoring, code review habits, curriculum design, and practical developer enablement. |
 | 2024-2025 | Zelcar Games backend/cloud leadership | Game servers, microservices, Go/PHP, GKE, Redis, PostgreSQL, CI/CD, observability, and team leadership. |
@@ -138,7 +138,7 @@ behind the product.
 flowchart TD
   A["Web foundations<br/>HTML, CSS, JavaScript, PHP, SEO<br/>2017"]
   B["Full stack formation<br/>CoderHouse, UTN, Python, PHP<br/>2021-2023"]
-  C["ArmoTuSitio and freelance delivery<br/>Websites, e-commerce, admin panels<br/>2019-present"]
+  C["ArmotuSitio.com Studio and freelance delivery<br/>Websites, e-commerce, admin panels<br/>2019-present"]
   D["Technical instructor<br/>Web, JS/TS, Backend, React, C#, SQL<br/>2022-present"]
   E["Backend / Cloud leadership<br/>Go, PHP, GKE, Redis, PostgreSQL<br/>2024-2025"]
   F["Current edge<br/>Backend architecture, cloud ops,<br/>internal platforms and product reliability"]
