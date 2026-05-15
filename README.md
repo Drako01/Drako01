@@ -119,6 +119,40 @@ engineering.
 
 ---
 
+## Developer journey
+
+My developer path moved from web fundamentals into full stack delivery, teaching, and backend/cloud leadership.
+That mix is part of how I think about software: code has to serve users, teams, operations, and the business
+behind the product.
+
+| Stage | Focus | What it added to my engineering work |
+| --- | --- | --- |
+| 2019-present | ArmoTuSitio and freelance web work | End-to-end websites, e-commerce, admin panels, SEO, performance, and client delivery. |
+| 2021-2023 | Full stack training | Structured growth across web development, Python, PHP, JavaScript, React, and backend foundations. |
+| 2022-present | CoderHouse technical instructor | Teaching, mentoring, code review habits, curriculum design, and practical developer enablement. |
+| 2024-2025 | Zelcar Games backend/cloud leadership | Game servers, microservices, Go/PHP, GKE, Redis, PostgreSQL, CI/CD, observability, and team leadership. |
+| Now | Backend architecture and cloud-native delivery | Internal platforms, product reliability, maintainable services, and operational clarity. |
+
+```mermaid
+flowchart TD
+  A["Web foundations<br/>HTML, CSS, JavaScript, PHP, SEO<br/>2019"]
+  B["Full stack formation<br/>CoderHouse, UTN, Python, PHP<br/>2021-2023"]
+  C["ArmoTuSitio and freelance delivery<br/>Websites, e-commerce, admin panels<br/>2019-present"]
+  D["Technical instructor<br/>Web, JS/TS, Backend, React, C#, SQL<br/>2022-present"]
+  E["Backend / Cloud leadership<br/>Go, PHP, GKE, Redis, PostgreSQL<br/>2024-2025"]
+  F["Current edge<br/>Backend architecture, cloud ops,<br/>internal platforms and product reliability"]
+
+  A --> B
+  A --> C
+  B --> D
+  C --> E
+  C --> F
+  D --> F
+  E --> F
+```
+
+---
+
 ## GitHub signal
 
 <p align="center">
