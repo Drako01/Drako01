@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://wallpapers.com/images/hd/git-hub-logo-octocat-jtnxn8gazlrambyl-2.png' alt='Git' width='528' />
+  <img src='https://wallpapers.com/images/hd/git-hub-logo-octocat-jtnxn8gazlrambyl-2.png' alt='Git' width='428' />
 </p>
 
 # Alejandro Daniel Di Stefano
@@ -8,11 +8,11 @@
   Backend-focused Full Stack Developer | Cloud-Native Engineer | Technical Instructor
 </p>
 
-<p align='center'>
+<!-- <p align='center'>
   <a href='https://drako01.github.io/portfolio/' target='_blank'>
     <img src='nombre-logo-blanco.png' height='180' alt='Alejandro Daniel Di Stefano logo' style='border-radius:20px;' />
   </a>
-</p>
+</p> -->
 
 ---
 
