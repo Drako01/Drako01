@@ -127,6 +127,7 @@ behind the product.
 
 | Stage | Focus | What it added to my engineering work |
 | --- | --- | --- |
+| 2017 | Web foundations | HTML, CSS, JavaScript, PHP, SEO, and the first step into building for the web. |
 | 2019-present | ArmoTuSitio and freelance web work | End-to-end websites, e-commerce, admin panels, SEO, performance, and client delivery. |
 | 2021-2023 | Full stack training | Structured growth across web development, Python, PHP, JavaScript, React, and backend foundations. |
 | 2022-present | CoderHouse technical instructor | Teaching, mentoring, code review habits, curriculum design, and practical developer enablement. |
@@ -135,7 +136,7 @@ behind the product.
 
 ```mermaid
 flowchart TD
-  A["Web foundations<br/>HTML, CSS, JavaScript, PHP, SEO<br/>2019"]
+  A["Web foundations<br/>HTML, CSS, JavaScript, PHP, SEO<br/>2017"]
   B["Full stack formation<br/>CoderHouse, UTN, Python, PHP<br/>2021-2023"]
   C["ArmoTuSitio and freelance delivery<br/>Websites, e-commerce, admin panels<br/>2019-present"]
   D["Technical instructor<br/>Web, JS/TS, Backend, React, C#, SQL<br/>2022-present"]
