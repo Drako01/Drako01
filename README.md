@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://wallpapers.com/images/hd/git-hub-logo-octocat-jtnxn8gazlrambyl-2.png' alt='Git' width='128' />
+  <img src='https://wallpapers.com/images/hd/git-hub-logo-octocat-jtnxn8gazlrambyl-2.png' alt='Git' width='528' />
 </p>
 
 # Alejandro Daniel Di Stefano
