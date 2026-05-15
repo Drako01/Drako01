@@ -204,7 +204,7 @@
 
 <p align='left'>
   <a href='https://www.linkedin.com/in/alejandro-daniel-di-stefano/' target='_blank'>
-    <img align='center' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/3840px-LinkedIn_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail' alt='LinkedIn' height='40' width='40' />
+    <img align='center' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/3840px-LinkedIn_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail' alt='LinkedIn' height='40'  />
   </a>
 </p>
 
