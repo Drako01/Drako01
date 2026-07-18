@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">BellaGema e-commerce ecosystem</title>
+  <desc id="description">Customer storefront, commerce API, payments, fulfillment, and operations dashboard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#160f19"/><stop offset="1" stop-color="#2b1a2f"/></linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2c6e8"/><stop offset="1" stop-color="#b685d6"/></linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#503857" stroke-width="2"/>
+  <text x="64" y="88" fill="#dca9ee" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">E-COMMERCE ECOSYSTEM</text>
+  <text x="64" y="145" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">BellaGema</text>
+  <text x="64" y="190" fill="#c5b5c9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">Storefront, operations, payments, loyalty, and fulfillment.</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="64" y="237" width="108" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="89" y="262" fill="#ffffff">Next.js</text>
+    <rect x="184" y="237" width="94" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="211" y="262" fill="#ffffff">PHP 8</text>
+    <rect x="290" y="237" width="100" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="315" y="262" fill="#ffffff">MySQL</text>
+    <rect x="402" y="237" width="152" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="425" y="262" fill="#ffffff">Mercado Pago</text>
+  </g>
+  <g transform="translate(742 49)">
+    <path d="M177 5l135 76-50 170H92L42 81z" fill="#1e1422" stroke="#7f5b8c" stroke-width="2"/>
+    <path d="M42 81h270M92 251l85-246 85 246M42 81l135 170L312 81M109 81l68-76 68 76" fill="none" stroke="url(#gem)" stroke-width="3" opacity="0.9"/>
+    <circle cx="177" cy="130" r="22" fill="#e8bee6" opacity="0.12"/>
+    <circle cx="177" cy="130" r="8" fill="#f2c6e8"/>
+  </g>
+</svg>
