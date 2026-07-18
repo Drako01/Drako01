@@ -1,251 +1,182 @@
 <p align="center">
-  <a href="https://distefano-alejandro.vercel.app/" target="_blank">
-    <img src="nombre-logo-blanco.png" alt="Alejandro Daniel Di Stefano" height="120" />
-  </a>
-</p>
-
-# Alejandro Daniel Di Stefano
-
-<p align="center">
-  <strong>Backend-focused Full Stack Developer | Cloud-Native Engineer | Technical Instructor</strong>
-</p>
-
-<p align="center">
-  I build backend systems, internal platforms, and cloud workflows for products that need to stay reliable
-  when real users, real data, and real operations start pushing back.
+  <img
+    src="assets/profile/alejandro-di-stefano-hero.svg"
+    alt="Alejandro Di Stefano — Full Stack Software Engineer"
+    width="100%"
+  />
 </p>
 
 <p align="center">
   <a href="https://distefano-alejandro.vercel.app/">Portfolio</a> ·
-  <a href="https://armotusitio.com.ar">ArmotuSitio.com Studio</a> ·
+  <a href="https://armotusitio.com.ar/">ArmotuSitio</a> ·
   <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano/">LinkedIn</a>
 </p>
 
-<p align="center">
-  <img
-    src="https://img.shields.io/badge/Backend%20Architecture-141B22?style=for-the-badge&logo=go&logoColor=F9ED32"
-    alt="Backend Architecture"
-  />
-  <img
-    src="https://img.shields.io/badge/Cloud%20Ops-141B22?style=for-the-badge&logo=googlecloud&logoColor=F9ED32"
-    alt="Cloud Ops"
-  />
-  <img
-    src="https://img.shields.io/badge/Internal%20Tools-141B22?style=for-the-badge&logo=githubactions&logoColor=F9ED32"
-    alt="Internal Tools"
-  />
-  <img
-    src="https://img.shields.io/badge/Technical%20Training-141B22?style=for-the-badge&logo=readme&logoColor=F9ED32"
-    alt="Technical Training"
-  />
-</p>
+## About me
 
----
+I am a backend-focused Full Stack Software Engineer based in Argentina. I build complete web products:
+from API design, authentication, data models, and business workflows to the interfaces and delivery pipelines
+that make them useful in production.
 
-## What I bring
+My work sits at the intersection of **PHP and Go backends**, **React and Next.js applications**, and the
+operational concerns behind real businesses: payments, permissions, automation, observability, email,
+reporting, and reliable deployments.
 
-I am strongest where product pressure meets backend complexity: APIs, data flows, infrastructure,
-automation, and the operational details that decide whether a system is pleasant to maintain or painful
-to rescue.
+I favor clear service boundaries, incremental delivery, and systems that remain understandable when the
+product, team, and data grow.
 
-- I design backend services with clear boundaries, observable behavior, and practical deployment paths.
-- I work across Go, PHP, Node.js, Python, Java, SQL, MongoDB, and modern frontend stacks when the product needs it.
-- I build cloud-native delivery workflows with Docker, Google Cloud, GKE, Terraform, Nginx, CI/CD, and monitoring.
-- I turn recurring operational work into internal tools, dashboards, scripts, queues, and safer admin flows.
-- I teach web development and object-oriented programming with a focus on real engineering habits.
+## Professional focus
 
-Based in Argentina. Working with teams that need backend reliability, operational clarity, and product-minded
-engineering.
-
----
-
-## Engineering signature
-
-| Area | How I work |
-| --- | --- |
-| Backend architecture | Service boundaries, API contracts, validation, auth flows, queues, and maintainable modules. |
-| Cloud and operations | Containers, deployment automation, infrastructure as code, observability, and rollback thinking. |
-| Game and digital products | Internal tooling, data pipelines, admin workflows, integrations, and production support. |
-| Full stack delivery | React, Next.js, Angular, Laravel, Django, FastAPI, Spring Boot, and pragmatic UI implementation. |
-| Technical leadership | Code reviews, mentorship, workshops, documentation, and team enablement. |
-
----
-
-## Current focus
-
-- Building reliable backend and cloud workflows for gaming, SaaS, and digital product operations.
-- Improving internal platforms where admins, support teams, and operators need speed without chaos.
-- Combining teaching, architecture, and hands-on delivery so teams ship with better judgment.
-
----
-
-## Featured builds
-
-| Build | What it shows |
-| --- | --- |
-| [ArmotuSitio.com Studio](https://armotusitio.com.ar) | Product engineering, business workflows, delivery thinking, and client-facing execution. |
-| [Personal portfolio](https://distefano-alejandro.vercel.app/) | Full stack presentation, frontend polish, deployability, and professional positioning. |
-| Backend and admin systems | APIs, RBAC, queues, exports, dashboards, data flows, and internal operational tools. |
-| Teaching work | Web development, OOP, code review habits, and practical engineering mentorship. |
-
----
-
-## What I optimize for
-
-- **Maintainability:** code that future teams can read, test, extend, and operate.
-- **Operational clarity:** logs, metrics, errors, retries, permissions, and failure paths that make sense.
-- **Delivery flow:** small deployable changes, clear contracts, CI/CD, and infrastructure that supports the product.
-- **User impact:** backend and tooling decisions tied to actual operators, admins, customers, and learners.
-
----
+- Backend architecture, REST APIs, authentication, RBAC, and business-critical workflows.
+- Full stack products, SaaS platforms, e-commerce, backoffices, and internal tools.
+- Business automation with webhooks, cron jobs, n8n, queues, and third-party integrations.
+- CI/CD, Docker-based delivery, cloud infrastructure, observability, and production support.
+- Technical leadership through code reviews, mentoring, documentation, and developer education.
 
 ## Core stack
 
+| Area | Technologies |
+| --- | --- |
+| **Backend** | ![PHP](https://img.shields.io/badge/PHP-141B22?logo=php&logoColor=777BB4) ![Go](https://img.shields.io/badge/Go-141B22?logo=go&logoColor=00ADD8) ![Node.js](https://img.shields.io/badge/Node.js-141B22?logo=nodedotjs&logoColor=5FA04E) ![REST APIs](https://img.shields.io/badge/REST_APIs-141B22?logo=swagger&logoColor=85EA2D) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-141B22?logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-141B22?logo=nextdotjs&logoColor=FFFFFF) ![TypeScript](https://img.shields.io/badge/TypeScript-141B22?logo=typescript&logoColor=3178C6) ![JavaScript](https://img.shields.io/badge/JavaScript-141B22?logo=javascript&logoColor=F7DF1E) |
+| **Data** | ![MySQL](https://img.shields.io/badge/MySQL-141B22?logo=mysql&logoColor=4479A1) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-141B22?logo=postgresql&logoColor=4169E1) ![MongoDB](https://img.shields.io/badge/MongoDB-141B22?logo=mongodb&logoColor=47A248) ![Redis](https://img.shields.io/badge/Redis-141B22?logo=redis&logoColor=FF4438) |
+| **DevOps** | ![Docker](https://img.shields.io/badge/Docker-141B22?logo=docker&logoColor=2496ED) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-141B22?logo=githubactions&logoColor=2088FF) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-141B22?logo=googlecloud&logoColor=4285F4) ![Terraform](https://img.shields.io/badge/Terraform-141B22?logo=terraform&logoColor=844FBA) |
+| **Tools** | ![Git](https://img.shields.io/badge/Git-141B22?logo=git&logoColor=F05032) ![n8n](https://img.shields.io/badge/n8n-141B22?logo=n8n&logoColor=EA4B71) ![Postman](https://img.shields.io/badge/Postman-141B22?logo=postman&logoColor=FF6C37) ![Linux](https://img.shields.io/badge/Linux-141B22?logo=linux&logoColor=FCC624) |
+
+## Selected projects
+
+### ArmotuSitio — business platform and delivery studio
+
+<a href="https://armotusitio.com.ar/">
+  <img
+    src="assets/projects/armotusitio-platform.svg"
+    alt="ArmotuSitio business platform architecture"
+    width="100%"
+  />
+</a>
+
+A multilingual product and operations platform that connects lead acquisition, dynamic project briefs,
+client workflows, analytics, scheduling, and a secure backoffice.
+
+- **Product scope:** marketing site, CRM workflows, client portal, budgets, agenda, analytics, and email.
+- **Engineering:** modular PHP API, service and repository layers, RBAC, 2FA, audit trails, queues, and i18n.
+- **Stack:** Next.js, React, TypeScript, PHP 8, MySQL, SMTP, n8n, and GitHub Actions.
+
+[Visit ArmotuSitio](https://armotusitio.com.ar/)
+
+### BellaGema — production e-commerce ecosystem
+
+<a href="https://bellagema.com.ar/">
+  <img
+    src="assets/projects/bellagema-commerce.svg"
+    alt="BellaGema e-commerce platform architecture"
+    width="100%"
+  />
+</a>
+
+An end-to-end commerce platform for a real retail brand, covering the customer storefront, operations,
+payments, fulfillment, loyalty, and post-sale communication.
+
+- **Product scope:** catalog, cart, orders, customer accounts, promotions, loyalty, and admin dashboards.
+- **Integrations:** Mercado Pago, payment webhooks, shipping flows, SMTP, and IMAP email operations.
+- **Stack:** Next.js, React, PHP 8, MySQL, Mercado Pago, and GitHub Actions.
+
+[Visit BellaGema](https://bellagema.com.ar/)
+
+### Authentication and traffic security platform
+
+<a href="https://distefano-alejandro.vercel.app/">
+  <img
+    src="assets/projects/go-security-platform.svg"
+    alt="Go authentication, security, and observability platform architecture"
+    width="100%"
+  />
+</a>
+
+A Go service architecture for authentication and high-volume traffic protection, designed around explicit
+security controls, multiple persistence strategies, and production observability.
+
+- **Backend:** JWT authentication, role-based access, concurrency controls, detection, and mitigation.
+- **Operations:** structured logs, Prometheus metrics, Redis-backed coordination, and containerized delivery.
+- **Stack:** Go, PostgreSQL, MongoDB, Firestore, Redis, Docker, Terraform, GKE, and Prometheus.
+
+[View my engineering portfolio](https://distefano-alejandro.vercel.app/)
+
+### Los Reyes del Usado — modular commerce API
+
+<a href="https://github.com/Drako01/backend_lrdu">
+  <img
+    src="assets/projects/lrdu-api.svg"
+    alt="Los Reyes del Usado modular PHP commerce API"
+    width="100%"
+  />
+</a>
+
+A public PHP REST API that demonstrates layered backend design for a product catalog and administration
+system, including authentication, authorization, filtering, and database-focused delivery.
+
+- **Architecture:** routers, controllers, services, repositories, middleware, and explicit response helpers.
+- **Capabilities:** JWT authentication, RBAC, product and category management, search, filters, and pagination.
+- **Stack:** PHP 8, MySQL, PDO, JWT, Apache/Nginx, and Composer.
+
+[Explore the repository](https://github.com/Drako01/backend_lrdu)
+
+## Experience
+
+| Period | Role and impact |
+| --- | --- |
+| **2019 — present** | **Founder and Product Engineer, ArmotuSitio** — end-to-end web products, e-commerce, backoffices, automation, performance, and client delivery. |
+| **2022 — present** | **Technical Instructor, Coderhouse** — web and backend education, mentoring, code review, and practical engineering standards. |
+| **2024 — 2025** | **Backend and Cloud Lead, Zelcar Games** — Go and PHP services, GKE, Redis, PostgreSQL, CI/CD, observability, and technical leadership. |
+| **Current focus** | Senior backend architecture, full stack product delivery, business platforms, and reliable cloud operations. |
+
+## Engineering principles
+
+| Principle | What it means in practice |
+| --- | --- |
+| **Production first** | Failure paths, permissions, data integrity, logging, and deployment are part of the feature. |
+| **Clear boundaries** | Controllers stay thin; services own business rules; repositories own persistence. |
+| **Incremental delivery** | Small, backward-compatible changes are easier to verify, release, and operate. |
+| **Product thinking** | Architecture decisions connect to the customer, operator, and business outcome. |
+
+## GitHub activity
+
 <p align="center">
   <img
-    src="https://skillicons.dev/icons?i=go,php,nodejs,python,java,ts,js,cs,laravel,django,fastapi,spring,express,react,nextjs,angular,docker,gcp,kubernetes,terraform,githubactions,nginx,linux,bash,postgres,mysql,mongodb,redis,graphql,git,github,postman,tailwind,bootstrap,vscode&perline=7"
-    alt="Core stack: languages, frameworks, cloud operations, data, APIs, and tools"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=github_dark"
+    alt="Alejandro Di Stefano GitHub contribution activity"
+    width="100%"
   />
 </p>
 
----
-
-## Selected work paths
-
-- **Backend systems:** REST APIs, auth, RBAC, queues, exports, integrations, and admin modules.
-- **Cloud delivery:** Dockerized apps, GCP/GKE infrastructure, deployment scripts, reverse proxies, and CI/CD.
-- **Data and reporting:** SQL modeling, MongoDB usage, CSV/XLS/PDF exports, metrics, and operational dashboards.
-- **Teaching:** Practical programming, OOP, web fundamentals, backend design, and professional workflows.
-
----
-
-## Developer journey
-
-My developer path moved from web fundamentals into full stack delivery, teaching, and backend/cloud leadership.
-That mix is part of how I think about software: code has to serve users, teams, operations, and the business
-behind the product.
-
-| Stage | Focus | What it added to my engineering work |
-| --- | --- | --- |
-| 2017 | Web foundations | HTML, CSS, JavaScript, PHP, SEO, and the first step into building for the web. |
-| 2019-present | ArmotuSitio.com Studio and freelance web work | End-to-end websites, e-commerce, admin panels, SEO, performance, and client delivery. |
-| 2021-2023 | Full stack training | Structured growth across web development, Python, PHP, JavaScript, React, and backend foundations. |
-| 2022-present | CoderHouse technical instructor | Teaching, mentoring, code review habits, curriculum design, and practical developer enablement. |
-| 2024-2025 | Zelcar Games backend/cloud leadership | Game servers, microservices, Go/PHP, GKE, Redis, PostgreSQL, CI/CD, observability, and team leadership. |
-| Now | Backend architecture and cloud-native delivery | Internal platforms, product reliability, maintainable services, and operational clarity. |
-
-```mermaid
-flowchart TD
-  A["Web foundations<br/>HTML, CSS, JavaScript, PHP, SEO<br/>2017"]
-  B["Full stack formation<br/>CoderHouse, UTN, Python, PHP<br/>2021-2023"]
-  C["ArmotuSitio.com Studio and freelance delivery<br/>Websites, e-commerce, admin panels<br/>2019-present"]
-  D["Technical instructor<br/>Web, JS/TS, Backend, React, C#, SQL<br/>2022-present"]
-  E["Backend / Cloud leadership<br/>Go, PHP, GKE, Redis, PostgreSQL<br/>2024-2025"]
-  F["Current edge<br/>Backend architecture, cloud ops,<br/>internal platforms and product reliability"]
-
-  A --> B
-  A --> C
-  B --> D
-  C --> E
-  C --> F
-  D --> F
-  E --> F
-```
-
----
-
-## GitHub signal
-
 <p align="center">
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Drako01&theme=gruvbox"
-      alt="GitHub profile summary"
-    />
-  </a>
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Drako01&theme=github_dark"
+    alt="Alejandro Di Stefano GitHub statistics"
+    width="49%"
+  />
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Drako01&theme=github_dark"
+    alt="Alejandro Di Stefano GitHub repositories by language"
+    width="49%"
+  />
 </p>
 
-<p align="center">
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Drako01&theme=gruvbox"
-      alt="GitHub contribution stats"
-    />
-  </a>
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Drako01&theme=gruvbox&utcOffset=-3"
-      alt="GitHub productive time"
-    />
-  </a>
-</p>
+## Let's build something reliable
 
-<p align="center">
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://streak-stats.demolab.com?user=Drako01&theme=gruvbox&hide_border=true"
-      alt="GitHub contribution streak"
-    />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Drako01&theme=gruvbox"
-      width="49%"
-      alt="Repositories per language"
-    />
-  </a>
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Drako01&theme=gruvbox"
-      width="49%"
-      alt="Most committed languages"
-    />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Drako01">
-    <img
-      src="https://github-profile-trophy.vercel.app/?username=Drako01&theme=gruvbox&no-frame=true&margin-w=8&column=4"
-      alt="GitHub profile trophies"
-    />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github-readme-activity-graph.vercel.app/graph?username=Drako01&theme=gruvbox&hide_border=true&area=true&custom_title=Contribution%20activity">
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=Drako01&theme=gruvbox&hide_border=true&area=true&custom_title=Contribution%20activity"
-      width="95%"
-      alt="Contribution activity graph"
-    />
-  </a>
-</p>
-
----
-
-## Contact
+I am open to senior engineering, backend, full stack, technical leadership, and product consulting work.
 
 <p align="center">
   <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano/">
     <img
-      src="https://img.shields.io/badge/LinkedIn-Alejandro%20Di%20Stefano-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-      alt="LinkedIn"
+      src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+      alt="Connect with Alejandro Di Stefano on LinkedIn"
     />
   </a>
   <a href="https://distefano-alejandro.vercel.app/">
     <img
-      src="https://img.shields.io/badge/Portfolio-Open-222222?style=for-the-badge&logo=vercel&logoColor=white"
-      alt="Portfolio"
-    />
-  </a>
-  <a href="https://www.buymeacoffee.com/addistefanW">
-    <img
-      src="https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=111111"
-      alt="Buy me a coffee"
+      src="https://img.shields.io/badge/Portfolio-View_selected_work-141B22?style=for-the-badge&logo=vercel&logoColor=white"
+      alt="View Alejandro Di Stefano's portfolio"
     />
   </a>
 </p>

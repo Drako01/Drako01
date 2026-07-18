@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">Go authentication and traffic security platform</title>
+  <desc id="description">Secure Go services with Redis coordination, multiple databases, metrics, and cloud delivery.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07191d"/><stop offset="1" stop-color="#102b33"/></linearGradient></defs>
+  <rect width="1200" height="360" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#24545f" stroke-width="2"/>
+  <text x="64" y="88" fill="#56d4e4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">SECURITY + OBSERVABILITY</text>
+  <text x="64" y="145" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">Go service platform</text>
+  <text x="64" y="190" fill="#9bb8bd" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">Authentication, traffic mitigation, metrics, and cloud delivery.</text>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="64" y="237" width="76" height="38" rx="19" fill="#112c32" stroke="#2f6874"/><text x="89" y="262" fill="#ffffff">Go</text>
+    <rect x="152" y="237" width="92" height="38" rx="19" fill="#112c32" stroke="#2f6874"/><text x="175" y="262" fill="#ffffff">Redis</text>
+    <rect x="256" y="237" width="126" height="38" rx="19" fill="#112c32" stroke="#2f6874"/><text x="279" y="262" fill="#ffffff">Prometheus</text>
+    <rect x="394" y="237" width="102" height="38" rx="19" fill="#112c32" stroke="#2f6874"/><text x="419" y="262" fill="#ffffff">Docker</text>
+    <rect x="508" y="237" width="78" height="38" rx="19" fill="#112c32" stroke="#2f6874"/><text x="533" y="262" fill="#ffffff">GKE</text>
+  </g>
+  <g transform="translate(755 48)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M175 5l116 45v82c0 71-45 132-116 174C104 264 59 203 59 132V50z" fill="#0a2025" stroke="#56d4e4" stroke-width="3"/>
+    <rect x="127" y="125" width="96" height="78" rx="12" fill="#12323a" stroke="#77e2ef" stroke-width="3"/>
+    <path d="M146 125V98c0-39 58-39 58 0v27" stroke="#77e2ef" stroke-width="9"/>
+    <circle cx="175" cy="160" r="8" fill="#77e2ef" stroke="none"/><path d="M175 168v17" stroke="#77e2ef" stroke-width="6"/>
+    <path d="M19 94h42m228 0h42M30 224h55m180 0h55" stroke="#2f6874" stroke-width="3"/>
+    <circle cx="18" cy="94" r="6" fill="#56d4e4" stroke="none"/><circle cx="332" cy="94" r="6" fill="#56d4e4" stroke="none"/>
+    <circle cx="29" cy="224" r="6" fill="#56d4e4" stroke="none"/><circle cx="321" cy="224" r="6" fill="#56d4e4" stroke="none"/>
+  </g>
+</svg>
