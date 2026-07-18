@@ -104,7 +104,7 @@ security controls, multiple persistence strategies, and production observability
 
 ### Los Reyes del Usado — modular commerce API
 
-<a href="https://github.com/Drako01/backend_lrdu">
+<a href="https://losreyesdelusado.com.ar">
   <img
     src="assets/projects/lrdu-api.svg"
     alt="Los Reyes del Usado modular PHP commerce API"
@@ -119,7 +119,7 @@ system, including authentication, authorization, filtering, and database-focused
 - **Capabilities:** JWT authentication, RBAC, product and category management, search, filters, and pagination.
 - **Stack:** PHP 8, MySQL, PDO, JWT, Apache/Nginx, and Composer.
 
-[Explore the repository](https://github.com/Drako01/backend_lrdu)
+[Visit Los Reyes del Usado](https://losreyesdelusado.com.ar)
 
 ## Experience
 
