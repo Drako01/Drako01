@@ -16,10 +16,4 @@
     <rect x="290" y="237" width="100" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="315" y="262" fill="#ffffff">MySQL</text>
     <rect x="402" y="237" width="152" height="38" rx="19" fill="#2c2030" stroke="#62496a"/><text x="425" y="262" fill="#ffffff">Mercado Pago</text>
   </g>
-  <g transform="translate(742 49)">
-    <path d="M177 5l135 76-50 170H92L42 81z" fill="#1e1422" stroke="#7f5b8c" stroke-width="2"/>
-    <path d="M42 81h270M92 251l85-246 85 246M42 81l135 170L312 81M109 81l68-76 68 76" fill="none" stroke="url(#gem)" stroke-width="3" opacity="0.9"/>
-    <circle cx="177" cy="130" r="22" fill="#e8bee6" opacity="0.12"/>
-    <circle cx="177" cy="130" r="8" fill="#f2c6e8"/>
-  </g>
 </svg>
