@@ -125,10 +125,10 @@ system, including authentication, authorization, filtering, and database-focused
 
 | Period | Role and impact |
 | --- | --- |
+| **2026 — present** | **Full Stack Software Engineer, DIGI** — development and maintenance of SaaS products for financial and retail clients, working across Node.js and React applications, microservices, MongoDB, AWS-based services, authentication flows, onboarding processes, and production support. |
 | **2019 — present** | **Founder and Product Engineer, ArmotuSitio** — end-to-end web products, e-commerce, backoffices, automation, performance, and client delivery. |
 | **2022 — present** | **Technical Instructor, Coderhouse** — web and backend education, mentoring, code review, and practical engineering standards. |
 | **2024 — 2025** | **Backend and Cloud Lead, Zelcar Games** — Go and PHP services, GKE, Redis, PostgreSQL, CI/CD, observability, and technical leadership. |
-| **Current focus** | Senior backend architecture, full stack product delivery, business platforms, and reliable cloud operations. |
 
 ## Engineering principles
 
