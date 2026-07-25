@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="assets/profile/alejandro-di-stefano-hero.svg"
+    src="assets/profile/alejandro-di-stefano-hero-retro.svg"
     alt="Alejandro Di Stefano — Full Stack Software Engineer"
     width="100%"
   />
