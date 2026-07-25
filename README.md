@@ -12,7 +12,8 @@
   <a href="https://www.linkedin.com/in/alejandro-daniel-di-stefano/">LinkedIn</a>
 </p>
 
-## About me
+<a id="about-me"></a>
+<img src="assets/sections/about-me.svg" alt="About me" height="52" />
 
 I am a backend-focused Full Stack Software Engineer based in Argentina. I build complete web products:
 from API design, authentication, data models, and business workflows to the interfaces and delivery pipelines
@@ -25,7 +26,8 @@ reporting, and reliable deployments.
 I favor clear service boundaries, incremental delivery, and systems that remain understandable when the
 product, team, and data grow.
 
-## Professional focus
+<a id="professional-focus"></a>
+<img src="assets/sections/professional-focus.svg" alt="Professional focus" height="52" />
 
 - Backend architecture, REST APIs, authentication, RBAC, and business-critical workflows.
 - Full stack products, SaaS platforms, e-commerce, backoffices, and internal tools.
@@ -33,7 +35,8 @@ product, team, and data grow.
 - CI/CD, Docker-based delivery, cloud infrastructure, observability, and production support.
 - Technical leadership through code reviews, mentoring, documentation, and developer education.
 
-## Core stack
+<a id="core-stack"></a>
+<img src="assets/sections/core-stack.svg" alt="Core stack" height="52" />
 
 | Area | Technologies |
 | --- | --- |
@@ -43,7 +46,8 @@ product, team, and data grow.
 | **DevOps** | ![Docker](https://img.shields.io/badge/Docker-141B22?logo=docker&logoColor=2496ED) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-141B22?logo=githubactions&logoColor=2088FF) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-141B22?logo=googlecloud&logoColor=4285F4) ![Terraform](https://img.shields.io/badge/Terraform-141B22?logo=terraform&logoColor=844FBA) |
 | **Tools** | ![Git](https://img.shields.io/badge/Git-141B22?logo=git&logoColor=F05032) ![n8n](https://img.shields.io/badge/n8n-141B22?logo=n8n&logoColor=EA4B71) ![Postman](https://img.shields.io/badge/Postman-141B22?logo=postman&logoColor=FF6C37) ![Linux](https://img.shields.io/badge/Linux-141B22?logo=linux&logoColor=FCC624) |
 
-## Selected projects
+<a id="selected-projects"></a>
+<img src="assets/sections/selected-projects.svg" alt="Selected projects" height="52" />
 
 ### ArmotuSitio — business platform and delivery studio
 
@@ -121,7 +125,8 @@ system, including authentication, authorization, filtering, and database-focused
 
 [Visit Los Reyes del Usado](https://losreyesdelusado.com.ar)
 
-## Experience
+<a id="experience"></a>
+<img src="assets/sections/experience.svg" alt="Experience" height="52" />
 
 | Period | Role and impact |
 | --- | --- |
@@ -130,7 +135,8 @@ system, including authentication, authorization, filtering, and database-focused
 | **2022 — present** | **Technical Instructor, Coderhouse** — web and backend education, mentoring, code review, and practical engineering standards. |
 | **2024 — 2025** | **Backend and Cloud Lead, Zelcar Games** — Go and PHP services, GKE, Redis, PostgreSQL, CI/CD, observability, and technical leadership. |
 
-## Engineering principles
+<a id="engineering-principles"></a>
+<img src="assets/sections/engineering-principles.svg" alt="Engineering principles" height="52" />
 
 | Principle | What it means in practice |
 | --- | --- |
@@ -139,7 +145,8 @@ system, including authentication, authorization, filtering, and database-focused
 | **Incremental delivery** | Small, backward-compatible changes are easier to verify, release, and operate. |
 | **Product thinking** | Architecture decisions connect to the customer, operator, and business outcome. |
 
-## GitHub activity
+<a id="github-activity"></a>
+<img src="assets/sections/github-activity.svg" alt="GitHub activity" height="52" />
 
 <p align="center">
   <img
@@ -162,7 +169,8 @@ system, including authentication, authorization, filtering, and database-focused
   />
 </p>
 
-## Let's build something reliable
+<a id="lets-build-something-reliable"></a>
+<img src="assets/sections/lets-build.svg" alt="Let's build something reliable" height="52" />
 
 I am open to senior engineering, backend, full stack, technical leadership, and product consulting work.
 
