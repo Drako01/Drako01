@@ -24,7 +24,7 @@ CARDS_DIR = ROOT / "assets" / "open-vsx"
 START = "<!-- OPEN_VSX_EXTENSIONS:START -->"
 END = "<!-- OPEN_VSX_EXTENSIONS:END -->"
 PREFERRED_ORDER = ("orquestivo", "probato-pr", "indizivo", "saturivo")
-COLUMNS = 4
+COLUMNS = 3
 MAX_ICON_BYTES = 256 * 1024
 ACCENTS = {"orquestivo": "#7A9CFF", "probato-pr": "#63FF8A", "indizivo": "#42D6C5", "saturivo": "#F0B76B"}
 # Publisher-owned, official Marketplace icon paths, confirmed against each extension package.json.
@@ -183,13 +183,16 @@ def render_gallery(extensions: list[dict]) -> str:
         raise ValueError("Refusing to replace a gallery with an empty result")
     rows = []
     for start in range(0, len(extensions), COLUMNS):
+        items = extensions[start : start + COLUMNS]
         cells = ['<p align="center">']
-        for item in extensions[start : start + COLUMNS]:
+        for index, item in enumerate(items):
             slug = item["slug"]
             url = f"https://open-vsx.org/extension/{NAMESPACE}/{quote(slug)}"
             title = html.escape(str(item["name"]), quote=True)
+            if index:
+                cells.append("  &emsp;")
             cells.append(
-                f'  <a href="{url}"><img src="assets/open-vsx/{slug}.svg" width="23.5%" '
+                f'  <a href="{url}"><img src="assets/open-vsx/{slug}.svg" width="29%" '
                 f'alt="{title} — v{html.escape(str(item["version"]), quote=True)}; '
                 f'{item["downloads"]:,} downloads" /></a>'
             )
