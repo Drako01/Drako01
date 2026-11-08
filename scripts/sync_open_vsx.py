@@ -35,14 +35,6 @@ OFFICIAL_ICONS = {
     "saturivo": "https://raw.githubusercontent.com/Drako01/saturivo/main/media/saturivo-icon.png",
 }
 
-# Embedded SVG glyphs are the fallback when an icon cannot be downloaded.
-# The Open VSX icon is preferred and embedded as a safe bitmap during sync.
-FALLBACK_ICONS = {
-    "orquestivo": '<g fill="none" stroke="#9BADFF" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><rect x="18" y="32" width="13" height="13" rx="3"/><rect x="37" y="32" width="13" height="13" rx="3"/><rect x="56" y="32" width="13" height="13" rx="3"/><path d="M24 29L37 17L50 29M43 49L54 61L64 52"/></g>',
-    "probato-pr": '<g fill="none" stroke="#EAF7F0" stroke-width="4" stroke-linecap="round"><path d="M26 17V63M26 24H48Q63 24 63 37T48 50H26"/><circle cx="26" cy="17" r="5" fill="#0E1822"/><circle cx="26" cy="63" r="5" fill="#0E1822"/><circle cx="63" cy="37" r="7" fill="#42CDA4" stroke="none"/></g>',
-    "indizivo": '<g fill="none" stroke-linecap="round"><path d="M24 17V64" stroke="#F4F7F8" stroke-width="5"/><path d="M38 20Q62 20 62 48M38 32Q53 32 53 48M38 44Q43 44 43 48" stroke="#39D0BC" stroke-width="4"/><circle cx="62" cy="48" r="5" fill="#F6BA65" stroke="none"/></g>',
-    "saturivo": '<g fill="none" stroke-linecap="round"><path d="M17 51A25 25 0 0 1 67 51" stroke="#42D9DC" stroke-width="4"/><path d="M28 55V66M39 48V66M50 42V66" stroke="#2BBBCD" stroke-width="6"/><path d="M42 54L61 33" stroke="#FFB568" stroke-width="4"/><circle cx="42" cy="54" r="5" fill="#FFB568" stroke="none"/></g>',
-}
 
 
 def get_json(url: str) -> dict:
@@ -81,9 +73,9 @@ def get_icon_data(url: str) -> str:
         final_url = urlparse(response.geturl())
         if final_url.hostname not in ("open-vsx.org", "raw.githubusercontent.com") or len(data) > MAX_ICON_BYTES:
             raise ValueError(f"Untrusted or oversized icon: {url}")
-        if data.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+        if data.startswith(b"\x89PNG\r\n\x1a\n"):
             mime = "image/png"
-        elif data.startswith(b"\\xff\\xd8\\xff"):
+        elif data.startswith(b"\xff\xd8\xff"):
             mime = "image/jpeg"
         elif data[:4] == b"RIFF" and data[8:12] == b"WEBP":
             mime = "image/webp"
