@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="254" viewBox="0 0 252 254" role="img" aria-label="Indizivo, version 0.2.2, 720 downloads">
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#42D6C5"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
+  <radialGradient id="light"><stop offset="0%" stop-color="#42D6C5" stop-opacity=".17"/><stop offset="100%" stop-color="#42D6C5" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="1.5" y="1.5" width="249" height="251" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
+<rect x="2" y="2" width="248" height="2.5" rx="1.25" fill="url(#accent)"/>
+<circle cx="224" cy="19" r="95" fill="url(#light)"/>
+<rect x="14" y="16" width="72" height="72" rx="13" fill="#10202B" stroke="#2D4351"/>
+<g fill="none" stroke-linecap="round"><path d="M24 17V64" stroke="#F4F7F8" stroke-width="5"/><path d="M38 20Q62 20 62 48M38 32Q53 32 53 48M38 44Q43 44 43 48" stroke="#39D0BC" stroke-width="4"/><circle cx="62" cy="48" r="5" fill="#F6BA65" stroke="none"/></g>
+<text x="100" y="33" fill="#42D6C5" font-size="9.5" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="1.1">VS CODE TOOL</text>
+<text x="100" y="57" fill="#F2F6FA" font-size="17" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Indizivo</text>
+<text x="100" y="73" fill="#819BAA" font-size="11" font-family="Segoe UI, Arial, sans-serif">armotusitio</text>
+<path d="M17 103H235" stroke="#2C3D4B"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+  <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
+  <text x="19" y="130" fill="#B9C9D6" font-size="13" font-weight="400">Evidence-first reproducible</text>
+  <text x="19" y="149" fill="#B9C9D6" font-size="13" font-weight="400">development environment</text>
+  <text x="19" y="168" fill="#B9C9D6" font-size="13" font-weight="400">diagnostics.</text>
+  <path d="M17 198H235" stroke="#2C3D4B"/>
+  <text x="19" y="217" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
+  <text x="233" y="217" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
+  <rect x="16" y="223" width="91" height="23" rx="7" fill="#21362E" stroke="#356E52"/>
+  <text x="61" y="239" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v0.2.2</text>
+  <text x="233" y="240" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">720</text>
+</g>
+</svg>
