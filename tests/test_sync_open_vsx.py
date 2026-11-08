@@ -1,5 +1,8 @@
-"""Offline tests for the Open VSX SVG gallery and safe README updates."""
+"""Offline tests for the Open VSX PNG gallery and safe README updates."""
+import base64
 import unittest
+
+from cairosvg import svg2png
 from xml.etree import ElementTree
 
 from scripts.sync_open_vsx import (
@@ -52,7 +55,7 @@ class GalleryTest(unittest.TestCase):
         self.assertEqual(rows[1].count('<img '), 2)
         self.assertIn("https://open-vsx.org/extension/armotusitio/noditrivo", gallery)
         self.assertIn("1,234 downloads", gallery)
-        self.assertIn("assets/open-vsx/noditrivo.svg", gallery)
+        self.assertIn("assets/open-vsx/noditrivo.png", gallery)
 
     def test_card_is_svg_with_background_rounded_border_version_and_downloads(self):
         item = {
@@ -70,7 +73,26 @@ class GalleryTest(unittest.TestCase):
         self.assertIn("v0.2.2", svg)
         self.assertIn("1,720", svg)
         self.assertIn("Indizivo", svg)
-        self.assertIn('y="140"', svg)
+        self.assertIn('y="154"', svg)
+        self.assertIn('M17 221H235', svg)
+        # The WHAT IT DOES label is at y=116, description starts at y=154.
+        self.assertGreaterEqual(154 - 116, 38)
+
+    def test_card_is_rasterized_to_png_with_embedded_logo(self):
+        icon_png = svg2png(bytestring=(
+            b'<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2">'
+            b'<rect width="2" height="2" fill="#21c985"/></svg>'
+        ))
+        icon = "data:image/png;base64," + base64.b64encode(icon_png).decode("ascii")
+        item = {
+            "slug": "noditrivo", "name": "Noditrivo",
+            "description": "Change impact intelligence", "version": "0.1.0", "downloads": 52,
+        }
+        svg = render_card(item, icon)
+        self.assertIn(icon, svg)
+        card_png = svg2png(bytestring=svg.encode("utf-8"), output_width=756, output_height=852)
+        self.assertTrue(card_png.startswith(b"\\x89PNG\\r\\n\\x1a\\n"))
+        self.assertGreater(len(card_png), 1000)
 
     def test_replaces_only_delimited_gallery(self):
         readme = f"Before\n{START}\nOLD\n{END}\nAfter\n"
