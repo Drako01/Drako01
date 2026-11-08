@@ -44,7 +44,12 @@ class GalleryTest(unittest.TestCase):
         ])
         gallery = render_gallery(items)
         self.assertEqual(gallery.count('<p align="center">'), 2)
-        self.assertEqual(gallery.count('width="23.5%"'), 5)
+        self.assertEqual(gallery.count('width="29%"'), 5)
+        self.assertEqual(gallery.count("&emsp;"), 3)
+        rows = gallery.split('<p align="center">')[1:]
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[0].count('<img '), 3)
+        self.assertEqual(rows[1].count('<img '), 2)
         self.assertIn("https://open-vsx.org/extension/armotusitio/noditrivo", gallery)
         self.assertIn("1,234 downloads", gallery)
         self.assertIn("assets/open-vsx/noditrivo.svg", gallery)
