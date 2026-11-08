@@ -72,7 +72,8 @@ class GalleryTest(unittest.TestCase):
             "icon": safe_icon("https://example.com/icon.svg"),
         }])
         self.assertNotIn("<script>", rendered)
-        self.assertNotIn('src=x onerror=alert(1)', rendered)
+        self.assertNotIn('<img src=x onerror=alert(1)>', rendered)
+        self.assertIn('&lt;img src=x onerror=alert(1)&gt;', rendered)
         self.assertNotIn("example.com", rendered)
         self.assertIn("&lt;script&gt;", rendered)
 
