@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="252" height="284" viewBox="0 0 252 284" role="img" aria-label="Saturivo, version 0.2.2, 242 downloads">
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="284" viewBox="0 0 252 284" role="img" aria-label="Saturivo, version 0.2.2, 308 downloads">
 <defs>
   <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#F0B76B"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
@@ -23,6 +23,6 @@
   <text x="233" y="241" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
   <rect x="16" y="249" width="91" height="25" rx="7" fill="#21362E" stroke="#356E52"/>
   <text x="61" y="267" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v0.2.2</text>
-  <text x="233" y="267" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">242</text>
+  <text x="233" y="267" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">308</text>
 </g>
 </svg>

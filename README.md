@@ -88,17 +88,17 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.1.1; 252 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.1.1; 270 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — Code Review with Proof — v0.6.0; 1,150 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — Code Review with Proof — v0.6.0; 1,254 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.2.2; 722 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.2.2; 758 downloads" /></a>
 </p>
 
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.2.2; 242 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.2.2; 308 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 0 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 162 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
