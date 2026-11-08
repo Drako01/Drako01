@@ -86,10 +86,15 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.svg" width="23.5%" alt="Orquestivo — v0.1.1; 252 downloads (approximate)" /></a>
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.svg" width="23.5%" alt="Probato PR — v0.6.0; 1,100 downloads (approximate)" /></a>
-  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.svg" width="23.5%" alt="Indizivo — v0.2.2; 720 downloads (approximate)" /></a>
-  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.svg" width="23.5%" alt="Saturivo — v0.2.2; 164 downloads (approximate)" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.svg" width="29%" alt="Orquestivo — v0.1.1; 252 downloads (approximate)" /></a>
+  &emsp;
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.svg" width="29%" alt="Probato PR — v0.6.0; 1,100 downloads (approximate)" /></a>
+  &emsp;
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.svg" width="29%" alt="Indizivo — v0.2.2; 720 downloads (approximate)" /></a>
+</p>
+
+<p align="center">
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.svg" width="29%" alt="Saturivo — v0.2.2; 164 downloads (approximate)" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
