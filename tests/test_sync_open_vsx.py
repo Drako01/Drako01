@@ -7,6 +7,9 @@ from xml.etree import ElementTree
 
 from scripts.sync_open_vsx import (
     CATALOG_URL,
+    QUERY_URL,
+    RECENT_PUBLICATION_PROBES,
+    discover_extension_names,
     START,
     END,
     collect_extensions,
@@ -39,6 +42,8 @@ class GalleryTest(unittest.TestCase):
         def fake_fetch(url):
             if url == CATALOG_URL:
                 return {"name": "armotusitio", "extensions": {slug: url + "/" + slug for slug in slugs}}
+            if url.startswith(QUERY_URL):
+                return {"extensions": [metadata(slug) for slug in slugs]}
             return metadata(url.split("/")[-2])
 
         items = collect_extensions(fake_fetch)
@@ -56,6 +61,53 @@ class GalleryTest(unittest.TestCase):
         self.assertIn("https://open-vsx.org/extension/armotusitio/noditrivo", gallery)
         self.assertIn("1,234 downloads", gallery)
         self.assertIn("assets/open-vsx/noditrivo.png", gallery)
+
+    def test_fifth_extension_discovered_when_namespace_lags_behind_v2_query(self):
+        # Reproduce run #42442801427: namespace lists four, v2 query lists five.
+        stable = ["orquestivo", "probato-pr", "indizivo", "saturivo"]
+        fifth = "noditrivo"
+
+        def fetch(url):
+            if url == CATALOG_URL:
+                return {"name": "armotusitio", "extensions": {slug: url for slug in stable}}
+            if url.startswith(QUERY_URL):
+                return {"extensions": [metadata(slug) for slug in [*stable, fifth]]}
+            return metadata(url.split("/")[-2])
+
+        self.assertEqual(len(discover_extension_names(fetch)), 5)
+        extensions = collect_extensions(fetch)
+        self.assertEqual(len(extensions), 5)
+        self.assertIn(fifth, [item["slug"] for item in extensions])
+        self.assertIn("assets/open-vsx/noditrivo.png", render_gallery(extensions))
+
+    def test_direct_probe_finds_noditrivo_before_both_catalogs_are_updated(self):
+        stable = ["orquestivo", "probato-pr", "indizivo", "saturivo"]
+        self.assertIn("noditrivo", RECENT_PUBLICATION_PROBES)
+
+        def fetch(url):
+            if url == CATALOG_URL:
+                return {"name": "armotusitio", "extensions": {slug: url for slug in stable}}
+            if url.startswith(QUERY_URL):
+                return {"extensions": [metadata(slug) for slug in stable]}
+            return metadata(url.split("/")[-2])
+
+        self.assertIn("noditrivo", [item["slug"] for item in collect_extensions(fetch)])
+
+    def test_automatically_adds_sixth_extension_without_a_hardcoded_name(self):
+        slugs = ["orquestivo", "probato-pr", "indizivo", "saturivo", "noditrivo", "future-addon"]
+
+        def fetch(url):
+            if url == CATALOG_URL:
+                return {"name": "armotusitio", "extensions": {}}
+            if url.startswith(QUERY_URL):
+                return {"extensions": [metadata(slug) for slug in slugs]}
+            return metadata(url.split("/")[-2])
+
+        extensions = collect_extensions(fetch)
+        self.assertEqual(len(extensions), 6)
+        html = render_gallery(extensions)
+        self.assertEqual(html.count('width="29%"'), 6)
+        self.assertIn("assets/open-vsx/future-addon.png", html)
 
     def test_card_is_svg_with_background_rounded_border_version_and_downloads(self):
         item = {
