@@ -11,6 +11,7 @@ from scripts.sync_open_vsx import (
     render_gallery,
     replace_gallery,
     safe_icon,
+    OFFICIAL_ICONS,
 )
 
 
@@ -56,7 +57,7 @@ class GalleryTest(unittest.TestCase):
             "version": "0.2.2",
             "downloads": 1720,
         }
-        svg = render_card(item)
+        svg = render_card(item, "data:image/png;base64,AA==")
         root = ElementTree.fromstring(svg)
         self.assertTrue(root.tag.endswith("svg"))
         self.assertIn('rx="16"', svg)
@@ -64,6 +65,7 @@ class GalleryTest(unittest.TestCase):
         self.assertIn("v0.2.2", svg)
         self.assertIn("1,720", svg)
         self.assertIn("Indizivo", svg)
+        self.assertIn('y="140"', svg)
 
     def test_replaces_only_delimited_gallery(self):
         readme = f"Before\n{START}\nOLD\n{END}\nAfter\n"
@@ -91,12 +93,24 @@ class GalleryTest(unittest.TestCase):
             "downloads": 100,
             "icon": safe_icon("https://example.com/icon.svg"),
         }
-        svg = render_card(item)
+        svg = render_card(item, "data:image/png;base64,AA==")
         ElementTree.fromstring(svg)
         self.assertNotIn('<script>', svg)
         self.assertNotIn(malicious_name, svg)
         self.assertIn('&lt;script&gt;', svg)
         self.assertNotIn("example.com", svg)
+
+    def test_requires_real_brand_logo_and_references_official_sources(self):
+        for slug in ("orquestivo", "probato-pr", "indizivo", "saturivo"):
+            self.assertIn(slug, OFFICIAL_ICONS)
+            self.assertTrue(OFFICIAL_ICONS[slug].startswith("https://raw.githubusercontent.com/Drako01/"))
+        item = {
+            "slug": "noditrivo", "name": "Noditrivo", "description": "Change impact analysis",
+            "version": "0.1.0", "downloads": 50,
+        }
+        with self.assertRaisesRegex(ValueError, "Real published icon is required"):
+            render_card(item)
+        self.assertIn('href="data:image/png;base64,AA=="', render_card(item, "data:image/png;base64,AA=="))
 
     def test_rejects_missing_download_count(self):
         def fake_fetch(url):
