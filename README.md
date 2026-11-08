@@ -80,46 +80,20 @@ This is **ongoing product development**, not a claim that every planned module i
 **[Visit ArmotuSitio](https://armotusitio.com.ar/)**
 
 <a id="vs-code-extensions"></a>
-<h2>VS Code Extensions</h2>
+<img src="assets/sections/vs-code-extensions.svg" alt="VS Code extensions" height="52" />
 
-I also build and publish developer tools under the **armotusitio** publisher on Open VSX. These extensions focus on CI/CD, evidence-based code review, reproducible diagnostics, and performance analysis.
-
-The gallery is synchronized with Open VSX: **version numbers, cumulative downloads, and newly published extensions** are refreshed automatically. Download totals represent package downloads, not unique users.
+A growing collection of **production-oriented VS Code extensions**, built for CI/CD quality, code review, environment diagnostics and API performance. Click a card to view it in Open VSX.
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
-<table>
-  <tbody>
-    <tr>
-      <td width="25%" align="center" valign="top">
-        <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="https://raw.githubusercontent.com/Drako01/orquestivo/main/media/icon-128.png" width="58" height="58" alt="Orquestivo icon" /></a>
-        <p><strong><a href="https://open-vsx.org/extension/armotusitio/orquestivo">Orquestivo</a></strong></p>
-        <sub>Design, inspect and verify CI/CD workflows with evidence-backed diagnostics.</sub>
-        <p><code>v0.1.1</code> · ⬇ ~252 downloads</p>
-      </td>
-      <td width="25%" align="center" valign="top">
-        <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="https://raw.githubusercontent.com/Drako01/probato-pr/main/media/logo.png" width="58" height="58" alt="Probato PR icon" /></a>
-        <p><strong><a href="https://open-vsx.org/extension/armotusitio/probato-pr">Probato PR</a></strong></p>
-        <sub>Evidence-based pull request analysis and change verification.</sub>
-        <p><code>v0.6.0</code> · ⬇ ~1.1k downloads</p>
-      </td>
-      <td width="25%" align="center" valign="top">
-        <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="https://raw.githubusercontent.com/Drako01/indizivo/main/media/indizivo-icon-128.png" width="58" height="58" alt="Indizivo icon" /></a>
-        <p><strong><a href="https://open-vsx.org/extension/armotusitio/indizivo">Indizivo</a></strong></p>
-        <sub>Evidence-first, reproducible development environment diagnostics.</sub>
-        <p><code>v0.2.2</code> · ⬇ ~720 downloads</p>
-      </td>
-      <td width="25%" align="center" valign="top">
-        <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="https://raw.githubusercontent.com/Drako01/saturivo/main/media/saturivo-icon.png" width="58" height="58" alt="Saturivo icon" /></a>
-        <p><strong><a href="https://open-vsx.org/extension/armotusitio/saturivo">Saturivo</a></strong></p>
-        <sub>Evidence-based load, concurrency and API performance diagnostics.</sub>
-        <p><code>v0.2.2</code> · ⬇ ~164 downloads</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<p align="center">
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.svg" width="23.5%" alt="Orquestivo — v0.1.1; 252 downloads (approximate)" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.svg" width="23.5%" alt="Probato PR — v0.6.0; 1,100 downloads (approximate)" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.svg" width="23.5%" alt="Indizivo — v0.2.2; 720 downloads (approximate)" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.svg" width="23.5%" alt="Saturivo — v0.2.2; 164 downloads (approximate)" /></a>
+</p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
-<sub>Version and download figures come from Open VSX. Automated synchronization refreshes them every six hours; GitHub Actions may run scheduled jobs later than their nominal time.</sub>
+<sub>Version and download counts are refreshed from Open VSX every six hours. New extensions appear automatically.</sub>
 
 <a id="experience"></a>
 <img src="assets/sections/experience.svg" alt="Experience" height="52" />
