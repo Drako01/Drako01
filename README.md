@@ -97,6 +97,8 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <p align="center">
   <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.2.2; 242 downloads" /></a>
+  &emsp;
+  <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 0 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
