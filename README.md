@@ -54,60 +54,53 @@ accelerate implementation while keeping code review, testing, and technical deci
 <a id="selected-projects"></a>
 <img src="assets/sections/selected-projects.svg" alt="Selected projects" height="52" />
 
-### ArmotuSitio 2.0 — business platform and project management
+### ArmotuSitio 2.0 — Business platform & work management
 
 <a href="https://armotusitio.com.ar/">
   <img src="assets/projects/armotusitio-platform.svg" alt="ArmotuSitio business platform architecture" width="100%" />
 </a>
 
-I design and develop a business management platform that combines CRM, client workflows,
-budgets, role-based permissions, analytics, and an integrated project management module.
+**ArmotuSitio 2.0** is my flagship business software project: an actively developed, modular platform that brings operational workflows, customer management, and project delivery into a unified experience.
 
-- **Project management:** epics, projects, tasks, Kanban boards, sprints, backlog, dependencies, capacity planning, and releases; inspired by workflows found in Jira and ClickUp.
-- **Engineering:** PHP API and service layers, MySQL, Next.js, TypeScript, authentication, RBAC, and CI/CD.
-- **Business features:** client portal, quotations, scheduling, integrations, and internal backoffice.
+**Product and business scope**
 
-**Private source code.** [Visit ArmotuSitio](https://armotusitio.com.ar/)
+- **CRM and commercial operations:** customer records, leads, budgets and quotations, service/product management, and business follow-up.
+- **Work management:** epics, projects, issues and tasks; Kanban boards, backlogs, sprints, dependencies, rich-text editing, and attachment workflows.
+- **Operational modules:** appointments, scheduling, coordination, customer interactions, and integrations designed around practical business needs.
+- **Governance and administration:** roles and permissions, auditability, validation, and tools for running business processes consistently.
 
-### RedEvent — modular event-management SaaS
+**Engineering and architecture**
 
-A privately developed SaaS project built around a **Go backend**, **PostgreSQL**, **Next.js**,
-REST APIs, authentication, RBAC, modular applications, and automated quality checks.
+- **Frontend:** Next.js, React, TypeScript, responsive backoffice interfaces, and static-export deployment where required.
+- **Backend and data:** PHP service/API layers, MySQL, modular responsibilities, and structured business data.
+- **Security:** role-based access control, protected sessions, CSRF defenses, optional two-factor authentication, and authorization boundaries.
+- **Delivery:** automated testing, CI/CD, integration workflows, maintainability, and incremental releases.
+- **Experience:** multilingual content (ES/EN/PT), accessibility considerations, and responsive UX.
 
-- **Engineering focus:** API design, domain boundaries, multi-application architecture, testing, and CI/CD.
-- **Development workflow:** automated verification and AI-assisted engineering workflows.
-- **Status:** evolving project; not presented as a finished commercial product.
+This is **ongoing product development**, not a claim that every planned module is already commercially available. The source code is private; the product and technical experience are documented without exposing confidential implementation details.
 
-**Private source code.**
+**[Visit ArmotuSitio](https://armotusitio.com.ar/)**
 
-### BellaGema — e-commerce for a real business
+<a id="vs-code-extensions"></a>
+<img src="assets/sections/vs-code-extensions.svg" alt="VS Code extensions" height="52" />
 
-<a href="https://bellagema.com.ar/">
-  <img src="assets/projects/bellagema-commerce.svg" alt="BellaGema e-commerce platform architecture" width="100%" />
-</a>
+A growing collection of **production-oriented VS Code extensions**, built for CI/CD quality, code review, environment diagnostics and API performance. Click a card to view it in Open VSX.
 
-Full Stack development of an e-commerce platform with storefront, catalog, cart,
-checkout, order management, and backoffice operations.
+<!-- OPEN_VSX_EXTENSIONS:START -->
+<p align="center">
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.svg" width="29%" alt="Orquestivo — v0.1.1; 252 downloads" /></a>
+  &emsp;
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.svg" width="29%" alt="Probato PR — Code Review with Proof — v0.6.0; 1,130 downloads" /></a>
+  &emsp;
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.svg" width="29%" alt="Indizivo — v0.2.2; 720 downloads" /></a>
+</p>
 
-- **Integrations:** Mercado Pago, shipping flows, and operational processes.
-- **Stack:** Next.js, React, PHP, MySQL, and GitHub Actions.
+<p align="center">
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.svg" width="29%" alt="Saturivo — v0.2.2; 164 downloads" /></a>
+</p>
+<!-- OPEN_VSX_EXTENSIONS:END -->
 
-**Private source code.** [Visit BellaGema](https://bellagema.com.ar/)
-
-### Gestión Inmobiliaria — property management platform
-
-A privately developed business application with a **Go backend**, **REST APIs**,
-and a **Next.js frontend**, focused on property and rental management workflows.
-
-- **Engineering focus:** domain modeling, service boundaries, data persistence, and application delivery.
-- **Status:** evolving project.
-
-**Private source code.**
-
-### Public engineering examples
-
-For code that can be reviewed publicly, explore my [repositories](https://github.com/Drako01?tab=repositories),
-including documentation, API examples, and application experiments.
+<sub>Version and download counts are refreshed from Open VSX every six hours. New extensions appear automatically.</sub>
 
 <a id="experience"></a>
 <img src="assets/sections/experience.svg" alt="Experience" height="52" />

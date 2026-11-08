@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="254" viewBox="0 0 252 254" role="img" aria-label="Indizivo, version 0.2.2, 720 downloads">
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#42D6C5"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
+  <radialGradient id="light"><stop offset="0%" stop-color="#42D6C5" stop-opacity=".17"/><stop offset="100%" stop-color="#42D6C5" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="1.5" y="1.5" width="249" height="251" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
+<rect x="2" y="2" width="248" height="2.5" rx="1.25" fill="url(#accent)"/>
+<circle cx="224" cy="19" r="95" fill="url(#light)"/>
+<rect x="14" y="16" width="72" height="72" rx="13" fill="#10202B" stroke="#2D4351"/>
+<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAYFBMVEUcLDUvoJUXIi4fSE0XIi4YJC4eO0MpgXxZWVeqk13ZsWfa3uGNc0tNRzxwkHCcrJ1Gwaq8wcV+hYy5vsMYIy81wbAAAADz9vcqiYL1uWTT19pXYGknd3MzuqohV1okaGdekh6aAAAAIHRSTlPs/57/Whz///////////////////7/AP///////////8JIwFYAAAQXSURBVHja7ZvbdqMwDEVl7k3SaTvjgOnY+P//cggQcMBcaizrZfTWZq145xzZFokEpS3SJIqA+wuAKEmtK5VgWd3r2kZE6RGABGn1XolkDwB1eSsCvIrP8WNmhAmQ8DCRrABEnBMQQFD5RxuWAEHXNwkguP4zAqBZf8oDCJr/FoIOIOUUkU4AEQkApE+AhNNE8gQAIoDOBKAToN+LQChAJwEQbYFRAiDaAqMEQOnAYyPAngNZUWCeBSVs74Hso6qq619ED2AzBeC76gKPINkG+N2vX13x9gFs5uB1AKgKPIDNl7+tADFTSrE2ct3Ep5+ZjgGYSRCruxlMNmd2sgMAuy+CySwggLrbgkmgBbjflYjDAMj7arA4BAAX6wR3AQEAeKy1lLlgNjOUDABg3BVNvtgULAsI0EUjXqVQTWCAB8OrDnlwgNaM3JSBhQdo3yo3CSA8wOOW+jmBVwDOtfqpC54BTBEYCYB5WQoaAD7loqYBmG4rldEATBowJAAthNisB8c8kCgAk8RMxtsE+ya4AKj9UixTR01wAIB5BZBb3kQ/X20QFGBHihB2UAIXAFiWQsticDQhRtqGWaOFIYXSa6cBwzwHMjkxLGx4SpDhHkRTLZSvSJBjn4SNsmsAw/8V+lEMzJ5v4kga+rkLBrXV61LxEQ88XUbSmvFHPPB1G0pbBSAPeODtOu7zQIHNAx0CYMh5afNABClItMVvtn8YeqyI2FLuZxJAEIBm+Wmb/Sx0A4hj2wGvFp8W9osCt+vY/s2YXC7WMn1+bpaGLgB65fkvXp577ONS1/XlFxLA/OxV8yR4r4d4Q7DAQsBmGxHqepfAMQnbckgt972YZeHbBFAX/rdh/yguF1mYWQRYl+DMOdB9a60WAKMrv0yAGuMgkrNtpw0A0OLtBQAQAGDmQTNakD0eH/EBurQXs7/bcyCW4hEvFlxQ7gI5v320bHiTiz5yE+CGcxlpMSs2oBlWF+2Dc2EIAEG+oOis70J3m/E2AryH+IZksL7VfvwVqbj0hwAEqAdG66V5H8L77VYAfkX0Yv2PwgvA3PrAABbrQwLYrQ8F4G69F4Az1nsAOGf9aYCz1p8D8GD9GQAv1rsDeLLeFcCb9Y4AsTfrHQEab9Y7AkDuy3rnJMy450D5zeg/AAIAXkvfdivVnydAjAew2U1XDOt/Iwqw3VL61Xfz4TkQ7XRU8o9rVX0hNnVGuz2lPEPtek2Iu2p5CoSd3bzrqiXtrH70FZekrdWPzmpKCaJ+viAidKADSOlScJgxSegEGKZsgCoDnnNGhHM+UBJPOkFJRRDNxv2opt2gpCEYBz9JJi7NwVOKmVPrxCXZ1CuUxHO/88nrNPTk83L2HHX4OkoODL+jGQG2CXwo1+b/wev8f7Q2//8Po0QGXPMc+vEAAAAASUVORK5CYII="/>
+<text x="100" y="33" fill="#42D6C5" font-size="9.5" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="1.1">VS CODE TOOL</text>
+<text x="100" y="57" fill="#F2F6FA" font-size="17" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Indizivo</text>
+<text x="100" y="73" fill="#819BAA" font-size="11" font-family="Segoe UI, Arial, sans-serif">armotusitio</text>
+<path d="M17 103H235" stroke="#2C3D4B"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+  <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
+  <text x="19" y="140" fill="#B9C9D6" font-size="13" font-weight="400">Evidence-first development</text>
+  <text x="19" y="159" fill="#B9C9D6" font-size="13" font-weight="400">environment diagnostics. Find</text>
+  <text x="19" y="178" fill="#B9C9D6" font-size="13" font-weight="400">the cause. Fix with confidence.</text>
+  <path d="M17 198H235" stroke="#2C3D4B"/>
+  <text x="19" y="217" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
+  <text x="233" y="217" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
+  <rect x="16" y="223" width="91" height="23" rx="7" fill="#21362E" stroke="#356E52"/>
+  <text x="61" y="239" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v0.2.2</text>
+  <text x="233" y="240" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">720</text>
+</g>
+</svg>

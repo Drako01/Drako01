@@ -1,0 +1,76 @@
+name: Sync Open VSX profile gallery
+
+on:
+  pull_request:
+    paths:
+      - README.md
+      - scripts/sync_open_vsx.py
+      - tests/test_sync_open_vsx.py
+      - requirements-profile-gallery.txt
+      - 'assets/open-vsx/**'
+      - assets/sections/vs-code-extensions.svg
+      - .github/workflows/sync-open-vsx-profile.yml
+  push:
+    branches: [main]
+    paths:
+      - scripts/sync_open_vsx.py
+      - .github/workflows/sync-open-vsx-profile.yml
+  schedule:
+    # Four inexpensive checks per day; commits only when the catalog changes.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-open-vsx-sync
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install card renderer
+        run: python -m pip install -r requirements-profile-gallery.txt
+      - name: Offline contract tests
+        run: python -m unittest discover -s tests -p 'test_sync_open_vsx.py' -v
+      - name: Compile synchronizer
+        run: python -m py_compile scripts/sync_open_vsx.py
+      - name: Smoke test against live Open VSX API
+        run: python scripts/sync_open_vsx.py
+
+  sync:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install card renderer
+        run: python -m pip install -r requirements-profile-gallery.txt
+      - name: Fetch published extensions from Open VSX
+        run: python scripts/sync_open_vsx.py
+      - name: Commit only when extension content changed
+        run: |
+          git add README.md assets/open-vsx/
+          if git diff --cached --quiet; then
+            echo "No catalog changes. Skipping commit."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "docs(profile): sync Open VSX extension cards [skip ci]"
+          git push origin HEAD:main

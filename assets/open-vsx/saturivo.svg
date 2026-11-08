@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="254" viewBox="0 0 252 254" role="img" aria-label="Saturivo, version 0.2.2, 164 downloads">
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#F0B76B"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
+  <radialGradient id="light"><stop offset="0%" stop-color="#F0B76B" stop-opacity=".17"/><stop offset="100%" stop-color="#F0B76B" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="1.5" y="1.5" width="249" height="251" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
+<rect x="2" y="2" width="248" height="2.5" rx="1.25" fill="url(#accent)"/>
+<circle cx="224" cy="19" r="95" fill="url(#light)"/>
+<rect x="14" y="16" width="72" height="72" rx="13" fill="#10202B" stroke="#2D4351"/>
+<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,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"/>
+<text x="100" y="33" fill="#F0B76B" font-size="9.5" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="1.1">VS CODE TOOL</text>
+<text x="100" y="57" fill="#F2F6FA" font-size="17" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Saturivo</text>
+<text x="100" y="73" fill="#819BAA" font-size="11" font-family="Segoe UI, Arial, sans-serif">armotusitio</text>
+<path d="M17 103H235" stroke="#2C3D4B"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+  <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
+  <text x="19" y="140" fill="#B9C9D6" font-size="13" font-weight="400">Evidence-based load, concurrency</text>
+  <text x="19" y="159" fill="#B9C9D6" font-size="13" font-weight="400">and performance diagnostics for</text>
+  <text x="19" y="178" fill="#B9C9D6" font-size="13" font-weight="400">local APIs and Go service…</text>
+  <path d="M17 198H235" stroke="#2C3D4B"/>
+  <text x="19" y="217" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
+  <text x="233" y="217" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
+  <rect x="16" y="223" width="91" height="23" rx="7" fill="#21362E" stroke="#356E52"/>
+  <text x="61" y="239" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v0.2.2</text>
+  <text x="233" y="240" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">164</text>
+</g>
+</svg>
