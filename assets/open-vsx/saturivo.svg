@@ -15,8 +15,8 @@
 <path d="M17 103H235" stroke="#2C3D4B"/>
 <g font-family="Segoe UI, Arial, sans-serif">
   <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
-  <text x="19" y="130" fill="#B9C9D6" font-size="13" font-weight="400">Evidence-based load, concurrency</text>
-  <text x="19" y="149" fill="#B9C9D6" font-size="13" font-weight="400">and API performance diagnostics.</text>
+  <text x="19" y="140" fill="#B9C9D6" font-size="13" font-weight="400">Evidence-based load, concurrency</text>
+  <text x="19" y="159" fill="#B9C9D6" font-size="13" font-weight="400">and API performance diagnostics.</text>
   <path d="M17 198H235" stroke="#2C3D4B"/>
   <text x="19" y="217" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
   <text x="233" y="217" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
