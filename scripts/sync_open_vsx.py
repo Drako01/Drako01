@@ -19,6 +19,10 @@ from urllib.request import Request, urlopen
 
 NAMESPACE = "armotusitio"
 CATALOG_URL = f"https://open-vsx.org/api/{NAMESPACE}"
+QUERY_URL = "https://open-vsx.org/api/v2/-/query"
+# Direct probe protects against a newly published extension missing from cached/indexed listings.
+# All future extensions are discovered from the two dynamic catalog endpoints.
+RECENT_PUBLICATION_PROBES = ("noditrivo",)
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 CARDS_DIR = ROOT / "assets" / "open-vsx"
@@ -36,6 +40,7 @@ OFFICIAL_ICONS = {
     "probato-pr": "https://raw.githubusercontent.com/Drako01/probato-pr/main/media/logo.png",
     "indizivo": "https://raw.githubusercontent.com/Drako01/indizivo/main/media/indizivo-icon-128.png",
     "saturivo": "https://raw.githubusercontent.com/Drako01/saturivo/main/media/saturivo-icon.png",
+    "noditrivo": "https://raw.githubusercontent.com/Drako01/noditrivo/main/media/brand/noditrivo-icon-256.png",
 }
 
 
@@ -87,17 +92,70 @@ def get_icon_data(url: str) -> str:
     return f"data:{mime};base64,{base64.b64encode(data).decode('ascii')}"
 
 
-def collect_extensions(fetch=get_json) -> list[dict]:
-    namespace = fetch(CATALOG_URL)
-    names = namespace.get("extensions")
-    if namespace.get("name", "").lower() != NAMESPACE or not isinstance(names, dict) or not names:
-        raise ValueError("Open VSX namespace missing or empty; README left unchanged")
+def discover_extension_names(fetch=get_json) -> list[str]:
+    """Union namespace metadata with paginated query results to avoid stale discovery.
 
+    The namespace endpoint can lag after a newly published extension. The v2
+    query index is a separate source. A direct probe covers the known
+    recently published extension until both indexes are consistent.
+    """
+    names: set[str] = set(RECENT_PUBLICATION_PROBES)
+    error_messages: list[str] = []
+    sources_ok = 0
+
+    try:
+        catalog = fetch(CATALOG_URL)
+        extensions = catalog.get("extensions")
+        if catalog.get("name", "").lower() != NAMESPACE or not isinstance(extensions, dict):
+            raise ValueError("Unexpected Open VSX namespace response")
+        names.update(extensions.keys())
+        sources_ok += 1
+    except (OSError, ValueError, KeyError) as exc:
+        error_messages.append(f"namespace API: {exc}")
+
+    try:
+        for page in range(10):
+            offset = page * 100
+            url = f"{QUERY_URL}?namespaceName={quote(NAMESPACE)}&size=100&offset={offset}&includeAllVersions=false"
+            query = fetch(url)
+            entries = query.get("extensions")
+            if not isinstance(entries, list):
+                raise ValueError("Unexpected Open VSX v2 query response")
+            for entry in entries:
+                if not isinstance(entry, dict):
+                    raise ValueError("Invalid query entry")
+                if entry.get("namespace", "").lower() == NAMESPACE:
+                    name = entry.get("name")
+                    if isinstance(name, str):
+                        names.add(name)
+            if len(entries) < 100:
+                break
+        else:
+            raise ValueError("Open VSX catalog exceeded 1,000 extensions")
+        sources_ok += 1
+    except (OSError, ValueError, KeyError) as exc:
+        error_messages.append(f"v2 query API: {exc}")
+
+    if sources_ok == 0:
+        raise ValueError(f"Both Open VSX catalogs failed: {'; '.join(error_messages)}")
+    for name in names:
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", name):
+            raise ValueError(f"Invalid Open VSX extension name: {name!r}")
+    return sorted(names)
+
+
+def collect_extensions(fetch=get_json) -> list[dict]:
+    slugs = discover_extension_names(fetch)
     result = []
-    for slug in names:
-        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", slug):
-            raise ValueError(f"Invalid extension name: {slug!r}")
-        data = fetch(f"{CATALOG_URL}/{quote(slug)}/latest")
+    for slug in slugs:
+        try:
+            data = fetch(f"{CATALOG_URL}/{quote(slug)}/latest")
+        except OSError as exc:
+            # A temporarily unindexed direct probe must not block other cards.
+            if slug in RECENT_PUBLICATION_PROBES and getattr(exc, "code", None) == 404:
+                continue
+            raise
+
         if data.get("reviewStatus") not in (None, "published") or data.get("preRelease") is True:
             continue
         if data.get("namespace") != NAMESPACE or data.get("name") != slug:
