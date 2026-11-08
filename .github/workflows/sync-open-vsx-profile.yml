@@ -6,6 +6,8 @@ on:
       - README.md
       - scripts/sync_open_vsx.py
       - tests/test_sync_open_vsx.py
+      - assets/open-vsx/**
+      - assets/sections/vs-code-extensions.svg
       - .github/workflows/sync-open-vsx-profile.yml
   push:
     branches: [main]
@@ -56,14 +58,14 @@ jobs:
           python-version: '3.12'
       - name: Fetch published extensions from Open VSX
         run: python scripts/sync_open_vsx.py
-      - name: Commit only when gallery data changed
+      - name: Commit only when extension content changed
         run: |
-          if git diff --quiet -- README.md; then
+          git add README.md assets/open-vsx/
+          if git diff --cached --quiet; then
             echo "No catalog changes. Skipping commit."
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md
           git commit -m "docs(profile): sync Open VSX extension cards [skip ci]"
           git push origin HEAD:main
