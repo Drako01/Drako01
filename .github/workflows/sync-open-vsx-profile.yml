@@ -43,18 +43,6 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_sync_open_vsx.py' -v
       - name: Compile synchronizer
         run: python -m py_compile scripts/sync_open_vsx.py
-      - name: Diagnose official Vestigivo icon delivery
-        run: |
-          python - <<'PY'
-          from urllib.request import urlopen
-          from urllib.parse import urlparse
-          u="https://open-vsx.org/api/armotusitio/vestigivo/0.1.2/file/vestigivo-icon-128.png"
-          with urlopen(u,timeout=20) as response:
-              data=response.read(262145)
-              final=urlparse(response.geturl())
-              print("Registry icon final host:", final.hostname)
-              print("Final scheme:", final.scheme, "bytes:", len(data), "mime:", response.headers.get("Content-Type"))
-          PY
       - name: Smoke test against live Open VSX API
         run: python scripts/sync_open_vsx.py
 
