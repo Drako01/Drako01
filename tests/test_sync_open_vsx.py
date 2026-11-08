@@ -215,7 +215,7 @@ class GalleryTest(unittest.TestCase):
         self.assertIn('href="data:image/png;base64,AA=="', render_card(item, "data:image/png;base64,AA=="))
 
     def test_official_cdn_redirect_preserves_real_vestigivo_icon(self):
-        png = b"\\x89PNG\\r\\n\\x1a\\n" + (b"\\x00" * (65737 - 8))
+        png = b"\x89PNG\r\n\x1a\n" + (b"\x00" * (65737 - 8))
         class FakeResponse:
             def __enter__(self): return self
             def __exit__(self, *_): return None
@@ -235,7 +235,7 @@ class GalleryTest(unittest.TestCase):
             def __exit__(self, *_): return None
             def read(self, *_): return self.data
             def geturl(self): return self.final_url
-        valid_png = b"\\x89PNG\\r\\n\\x1a\\n"
+        valid_png = b"\x89PNG\r\n\x1a\n"
         url = "https://open-vsx.org/api/armotusitio/vestigivo/0.1.2/file/vestigivo-icon-128.png"
         rejected = [
             ("https://example.com/icon.png", valid_png),
