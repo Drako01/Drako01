@@ -63,12 +63,14 @@ accelerate implementation while keeping code review, testing, and technical deci
 **ArmotuSitio 2.0** is my flagship business software project: an actively developed, modular platform that brings operational workflows, customer management, and project delivery into a unified experience.
 
 **Product and business scope**
+
 - **CRM and commercial operations:** customer records, leads, budgets and quotations, service/product management, and business follow-up.
 - **Work management:** epics, projects, issues and tasks; Kanban boards, backlogs, sprints, dependencies, rich-text editing, and attachment workflows.
 - **Operational modules:** appointments, scheduling, coordination, customer interactions, and integrations designed around practical business needs.
 - **Governance and administration:** roles and permissions, auditability, validation, and tools for running business processes consistently.
 
 **Engineering and architecture**
+
 - **Frontend:** Next.js, React, TypeScript, responsive backoffice interfaces, and static-export deployment where required.
 - **Backend and data:** PHP service/API layers, MySQL, modular responsibilities, and structured business data.
 - **Security:** role-based access control, protected sessions, CSRF defenses, optional two-factor authentication, and authorization boundaries.
