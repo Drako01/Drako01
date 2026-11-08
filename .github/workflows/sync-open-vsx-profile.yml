@@ -31,6 +31,8 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -42,6 +44,25 @@ jobs:
         run: python -m py_compile scripts/sync_open_vsx.py
       - name: Smoke test against live Open VSX API
         run: python scripts/sync_open_vsx.py
+      - name: Checkout first-party PR branch for authentic icon preview
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/profile-open-vsx-gallery' }}
+        uses: actions/checkout@v5
+        with:
+          ref: feat/profile-open-vsx-gallery
+          persist-credentials: true
+      - name: Seed official icon artwork on PR branch
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/profile-open-vsx-gallery' }}
+        run: |
+          python scripts/sync_open_vsx.py
+          git add README.md assets/open-vsx/
+          if git diff --cached --quiet; then
+            echo "Official brand artwork already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "style(profile): seed real Open VSX extension logos [skip ci]"
+          git push origin HEAD:feat/profile-open-vsx-gallery
 
   sync:
     if: github.event_name != 'pull_request'
