@@ -143,7 +143,7 @@ def render_card(item: dict, icon_data: str = "") -> str:
     desc = clipped(item["description"], 91)
     description = textwrap.wrap(desc, width=32, break_long_words=False, break_on_hyphens=False)[:3]
     lines = "\n".join(
-        f'  <text x="19" y="{130 + i * 19}" fill="#B9C9D6" font-size="13" font-weight="400">{html.escape(line, quote=False)}</text>'
+        f'  <text x="19" y="{140 + i * 19}" fill="#B9C9D6" font-size="13" font-weight="400">{html.escape(line, quote=False)}</text>'
         for i, line in enumerate(description)
     )
     if not icon_data.startswith(("data:image/png;base64,", "data:image/jpeg;base64,", "data:image/webp;base64,")):
