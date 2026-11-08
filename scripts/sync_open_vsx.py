@@ -13,6 +13,7 @@ import json
 import re
 import textwrap
 from pathlib import Path
+from cairosvg import svg2png
 from urllib.parse import quote, urlparse
 from urllib.request import Request, urlopen
 
@@ -143,20 +144,20 @@ def render_card(item: dict, icon_data: str = "") -> str:
     desc = clipped(item["description"], 91)
     description = textwrap.wrap(desc, width=32, break_long_words=False, break_on_hyphens=False)[:3]
     lines = "\n".join(
-        f'  <text x="19" y="{140 + i * 19}" fill="#B9C9D6" font-size="13" font-weight="400">{html.escape(line, quote=False)}</text>'
+        f'  <text x="19" y="{154 + i * 21}" fill="#B9C9D6" font-size="13" font-weight="400">{html.escape(line, quote=False)}</text>'
         for i, line in enumerate(description)
     )
     if not icon_data.startswith(("data:image/png;base64,", "data:image/jpeg;base64,", "data:image/webp;base64,")):
         raise ValueError(f"Real published icon is required: {slug}")
     icon = f'<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="{html.escape(icon_data, quote=True)}"/>'
     downloads = f'{int(item["downloads"]):,}'
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="252" height="254" viewBox="0 0 252 254" role="img" aria-label="{html.escape(str(item["name"]), quote=True)}, version {version}, {downloads} downloads">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="252" height="284" viewBox="0 0 252 284" role="img" aria-label="{html.escape(str(item["name"]), quote=True)}, version {version}, {downloads} downloads">
 <defs>
   <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="{accent}"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
   <radialGradient id="light"><stop offset="0%" stop-color="{accent}" stop-opacity=".17"/><stop offset="100%" stop-color="{accent}" stop-opacity="0"/></radialGradient>
 </defs>
-<rect x="1.5" y="1.5" width="249" height="251" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="249" height="281" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
 <rect x="2" y="2" width="248" height="2.5" rx="1.25" fill="url(#accent)"/>
 <circle cx="224" cy="19" r="95" fill="url(#light)"/>
 <rect x="14" y="16" width="72" height="72" rx="13" fill="#10202B" stroke="#2D4351"/>
@@ -168,12 +169,12 @@ def render_card(item: dict, icon_data: str = "") -> str:
 <g font-family="Segoe UI, Arial, sans-serif">
   <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
 {lines}
-  <path d="M17 198H235" stroke="#2C3D4B"/>
-  <text x="19" y="217" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
-  <text x="233" y="217" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
-  <rect x="16" y="223" width="91" height="23" rx="7" fill="#21362E" stroke="#356E52"/>
-  <text x="61" y="239" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v{version}</text>
-  <text x="233" y="240" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">{downloads}</text>
+  <path d="M17 221H235" stroke="#2C3D4B"/>
+  <text x="19" y="241" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
+  <text x="233" y="241" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
+  <rect x="16" y="249" width="91" height="25" rx="7" fill="#21362E" stroke="#356E52"/>
+  <text x="61" y="267" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v{version}</text>
+  <text x="233" y="267" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">{downloads}</text>
 </g>
 </svg>'''
 
@@ -192,7 +193,7 @@ def render_gallery(extensions: list[dict]) -> str:
             if index:
                 cells.append("  &emsp;")
             cells.append(
-                f'  <a href="{url}"><img src="assets/open-vsx/{slug}.svg" width="29%" '
+                f'  <a href="{url}"><img src="assets/open-vsx/{slug}.png" width="29%" '
                 f'alt="{title} — v{html.escape(str(item["version"]), quote=True)}; '
                 f'{item["downloads"]:,} downloads" /></a>'
             )
@@ -221,10 +222,23 @@ def main() -> None:
         )
         for item in extensions
     }
+    # Render PNG as the real displayed artifact. GitHub does not reliably
+    # render embedded raster logos inside referenced SVGs.
+    # Produce every PNG before writing any tracked file: failures leave the gallery intact.
+    rasters = {
+        path.with_suffix(".png"): svg2png(
+            bytestring=svg.encode("utf-8"), output_width=756, output_height=852
+        )
+        for path, svg in cards.items()
+    }
     changes = 0
     for path, svg in cards.items():
         if not path.exists() or path.read_text(encoding="utf-8") != svg:
             path.write_text(svg, encoding="utf-8")
+            changes += 1
+    for path, raster in rasters.items():
+        if not path.exists() or path.read_bytes() != raster:
+            path.write_bytes(raster)
             changes += 1
     if updated != current:
         README.write_text(updated, encoding="utf-8")
