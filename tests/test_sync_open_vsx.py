@@ -1,6 +1,7 @@
 """Offline tests for the Open VSX PNG gallery and safe README updates."""
 import base64
 import unittest
+from unittest.mock import patch
 
 from cairosvg import svg2png
 from xml.etree import ElementTree
@@ -18,6 +19,8 @@ from scripts.sync_open_vsx import (
     replace_gallery,
     safe_icon,
     OFFICIAL_ICONS,
+    get_icon_data,
+    MAX_ICON_BYTES,
 )
 
 
@@ -210,6 +213,42 @@ class GalleryTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Real published icon is required"):
             render_card(item)
         self.assertIn('href="data:image/png;base64,AA=="', render_card(item, "data:image/png;base64,AA=="))
+
+    def test_official_cdn_redirect_preserves_real_vestigivo_icon(self):
+        png = b"\x89PNG\r\n\x1a\n" + (b"\x00" * (65737 - 8))
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *_): return None
+            def read(self, *_): return png
+            def geturl(self): return "https://openvsx.eclipsecontent.org/storage/vestigivo-icon-128.png"
+        url = "https://open-vsx.org/api/armotusitio/vestigivo/0.1.2/file/vestigivo-icon-128.png"
+        with patch("scripts.sync_open_vsx.urlopen", return_value=FakeResponse()):
+            encoded = get_icon_data(url)
+        self.assertEqual(base64.b64decode(encoded.removeprefix("data:image/png;base64,")), png)
+
+    def test_icon_rejects_untrusted_redirect_or_oversized_file(self):
+        class FakeResponse:
+            def __init__(self, final_url, data):
+                self.final_url = final_url
+                self.data = data
+            def __enter__(self): return self
+            def __exit__(self, *_): return None
+            def read(self, *_): return self.data
+            def geturl(self): return self.final_url
+        valid_png = b"\x89PNG\r\n\x1a\n"
+        url = "https://open-vsx.org/api/armotusitio/vestigivo/0.1.2/file/vestigivo-icon-128.png"
+        rejected = [
+            ("https://example.com/icon.png", valid_png),
+            ("http://openvsx.eclipsecontent.org/icon.png", valid_png),
+            ("https://openvsx.eclipsecontent.org.evil.invalid/icon.png", valid_png),
+            ("https://openvsx.eclipsecontent.org:8443/icon.png", valid_png),
+            ("https://openvsx.eclipsecontent.org/icon.png", valid_png + b"0" * MAX_ICON_BYTES),
+        ]
+        for final_url, data in rejected:
+            with self.subTest(final_url=final_url, length=len(data)):
+                with patch("scripts.sync_open_vsx.urlopen", return_value=FakeResponse(final_url, data)):
+                    with self.assertRaisesRegex(ValueError, "Untrusted or oversized icon"):
+                        get_icon_data(url)
 
     def test_rejects_missing_download_count(self):
         def fake_fetch(url):
