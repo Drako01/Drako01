@@ -78,6 +78,26 @@ class GalleryTest(unittest.TestCase):
         # The WHAT IT DOES label is at y=116, description starts at y=154.
         self.assertGreaterEqual(154 - 116, 38)
 
+    def test_only_probato_pr_uses_short_visual_title(self):
+        common = {
+            "description": "Proof-based verification for developers.",
+            "version": "0.6.0",
+            "downloads": 1130,
+        }
+        original_name = "Probato PR — Code Review with Proof"
+        probato = render_card(
+            {**common, "slug": "probato-pr", "name": original_name},
+            "data:image/png;base64,AA==",
+        )
+        self.assertIn('>Probato PR</text>', probato)
+        self.assertNotIn('>Probato PR — Code R…</text>', probato)
+        self.assertIn(f'aria-label="{original_name}, version', probato)
+        other = render_card(
+            {**common, "slug": "indizivo", "name": "Indizivo Studio"},
+            "data:image/png;base64,AA==",
+        )
+        self.assertIn('>Indizivo Studio</text>', other)
+
     def test_card_is_rasterized_to_png_with_embedded_logo(self):
         icon_png = svg2png(bytestring=(
             b'<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2">'
