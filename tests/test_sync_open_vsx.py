@@ -1,11 +1,13 @@
-"""Offline contract tests for the Open VSX profile gallery."""
+"""Offline tests for the Open VSX SVG gallery and safe README updates."""
 import unittest
+from xml.etree import ElementTree
 
 from scripts.sync_open_vsx import (
     CATALOG_URL,
     START,
     END,
     collect_extensions,
+    render_card,
     render_gallery,
     replace_gallery,
     safe_icon,
@@ -33,51 +35,70 @@ class GalleryTest(unittest.TestCase):
         def fake_fetch(url):
             if url == CATALOG_URL:
                 return {"name": "armotusitio", "extensions": {slug: url + "/" + slug for slug in slugs}}
-            slug = url.split("/")[-2]
-            return metadata(slug)
+            return metadata(url.split("/")[-2])
 
         items = collect_extensions(fake_fetch)
         self.assertEqual([item["slug"] for item in items], [
             "orquestivo", "probato-pr", "indizivo", "saturivo", "noditrivo"
         ])
         gallery = render_gallery(items)
-        self.assertEqual(gallery.count("<tr>"), 2)
-        self.assertEqual(gallery.count('<td width="25%"'), 8)
+        self.assertEqual(gallery.count('<p align="center">'), 2)
+        self.assertEqual(gallery.count('width="23.5%"'), 5)
         self.assertIn("https://open-vsx.org/extension/armotusitio/noditrivo", gallery)
         self.assertIn("1,234 downloads", gallery)
-        self.assertIn("<code>v1.2.3</code>", gallery)
+        self.assertIn("assets/open-vsx/noditrivo.svg", gallery)
+
+    def test_card_is_svg_with_background_rounded_border_version_and_downloads(self):
+        item = {
+            "slug": "indizivo",
+            "name": "Indizivo",
+            "description": "Reproducible development environment diagnostics.",
+            "version": "0.2.2",
+            "downloads": 1720,
+        }
+        svg = render_card(item)
+        root = ElementTree.fromstring(svg)
+        self.assertTrue(root.tag.endswith("svg"))
+        self.assertIn('rx="16"', svg)
+        self.assertIn("url(#surface)", svg)
+        self.assertIn("v0.2.2", svg)
+        self.assertIn("1,720", svg)
+        self.assertIn("Indizivo", svg)
 
     def test_replaces_only_delimited_gallery(self):
         readme = f"Before\n{START}\nOLD\n{END}\nAfter\n"
-        result = replace_gallery(readme, "<table></table>")
-        self.assertEqual(result, f"Before\n{START}\n<table></table>\n{END}\nAfter\n")
+        self.assertEqual(
+            replace_gallery(readme, "<p>gallery</p>"),
+            f"Before\n{START}\n<p>gallery</p>\n{END}\nAfter\n",
+        )
 
-    def test_refuses_missing_markers_and_empty_catalog(self):
+    def test_refuses_missing_markers_or_empty_namespace(self):
         with self.assertRaises(ValueError):
-            replace_gallery("Other text", "<table></table>")
+            replace_gallery("Other text", "<p>gallery</p>")
         with self.assertRaises(ValueError):
             render_gallery([])
         with self.assertRaises(ValueError):
             collect_extensions(lambda _: {"name": "armotusitio", "extensions": {}})
 
-    def test_escapes_untrusted_metadata_and_rejects_external_icons(self):
-        raw_name = '<img src=x onerror=alert(1)>'
-        raw_description = '<script>alert("x")</script>'
-        rendered = render_gallery([{
+    def test_escape_metadata_and_reject_external_icons(self):
+        malicious_name = '<img src=x onerror=alert(1)>'
+        malicious_description = '<script>alert("x")</script>'
+        item = {
             "slug": "example",
-            "name": raw_name,
-            "description": raw_description,
+            "name": malicious_name,
+            "description": malicious_description,
             "version": "1.2.3",
             "downloads": 100,
             "icon": safe_icon("https://example.com/icon.svg"),
-        }])
-        self.assertNotIn("<script>", rendered)
-        self.assertNotIn('<img src=x onerror=alert(1)>', rendered)
-        self.assertIn('&lt;img src=x onerror=alert(1)&gt;', rendered)
-        self.assertNotIn("example.com", rendered)
-        self.assertIn("&lt;script&gt;", rendered)
+        }
+        svg = render_card(item)
+        ElementTree.fromstring(svg)
+        self.assertNotIn('<script>', svg)
+        self.assertNotIn(malicious_name, svg)
+        self.assertIn('&lt;script&gt;', svg)
+        self.assertNotIn("example.com", svg)
 
-    def test_fails_closed_if_download_count_missing(self):
+    def test_rejects_missing_download_count(self):
         def fake_fetch(url):
             if url == CATALOG_URL:
                 return {"name": "armotusitio", "extensions": {"example": "url"}}
