@@ -119,7 +119,7 @@ The gallery is synchronized with Open VSX: **version numbers, cumulative downloa
 </table>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
-<sub>Initial figures are approximate, based on the Open VSX catalog display. The first scheduled synchronization replaces them with the API-reported totals.</sub>
+<sub>Version and download figures come from Open VSX. Automated synchronization refreshes them every six hours; GitHub Actions may run scheduled jobs later than their nominal time.</sub>
 
 <a id="experience"></a>
 <img src="assets/sections/experience.svg" alt="Experience" height="52" />
