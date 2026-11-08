@@ -79,7 +79,15 @@ def get_icon_data(url: str) -> str:
     with urlopen(request, timeout=20) as response:
         data = response.read(MAX_ICON_BYTES + 1)
         final_url = urlparse(response.geturl())
-        if final_url.hostname not in ("open-vsx.org", "raw.githubusercontent.com") or len(data) > MAX_ICON_BYTES:
+        trusted_final_hosts = ("open-vsx.org", "raw.githubusercontent.com", "openvsx.eclipsecontent.org")
+        if (
+            final_url.scheme != "https"
+            or final_url.hostname not in trusted_final_hosts
+            or final_url.port not in (None, 443)
+            or final_url.username is not None
+            or final_url.password is not None
+            or len(data) > MAX_ICON_BYTES
+        ):
             raise ValueError(f"Untrusted or oversized icon: {url}")
         if data.startswith(b"\x89PNG\r\n\x1a\n"):
             mime = "image/png"
