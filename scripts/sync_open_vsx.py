@@ -28,6 +28,8 @@ PREFERRED_ORDER = ("orquestivo", "probato-pr", "indizivo", "saturivo")
 COLUMNS = 3
 MAX_ICON_BYTES = 256 * 1024
 ACCENTS = {"orquestivo": "#7A9CFF", "probato-pr": "#63FF8A", "indizivo": "#42D6C5", "saturivo": "#F0B76B"}
+# Presentation-only override for this card; Open VSX metadata and accessible name are retained.
+DISPLAY_NAME_OVERRIDES = {"probato-pr": "Probato PR"}
 # Publisher-owned, official Marketplace icon paths, confirmed against each extension package.json.
 OFFICIAL_ICONS = {
     "orquestivo": "https://raw.githubusercontent.com/Drako01/orquestivo/main/media/icon-128.png",
@@ -139,7 +141,7 @@ def render_card(item: dict, icon_data: str = "") -> str:
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", slug):
         raise ValueError("Unsafe filename")
     accent = ACCENTS.get(slug, "#63FF8A")
-    name = html.escape(clipped(item["name"], 20), quote=False)
+    name = html.escape(clipped(DISPLAY_NAME_OVERRIDES.get(slug, item["name"]), 20), quote=False)
     version = html.escape(clipped(item["version"], 20), quote=False)
     desc = clipped(item["description"], 91)
     description = textwrap.wrap(desc, width=32, break_long_words=False, break_on_hyphens=False)[:3]
