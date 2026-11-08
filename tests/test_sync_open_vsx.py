@@ -91,7 +91,7 @@ class GalleryTest(unittest.TestCase):
         svg = render_card(item, icon)
         self.assertIn(icon, svg)
         card_png = svg2png(bytestring=svg.encode("utf-8"), output_width=756, output_height=852)
-        self.assertTrue(card_png.startswith(b"\\x89PNG\\r\\n\\x1a\\n"))
+        self.assertTrue(card_png.startswith(b"\x89PNG\r\n\x1a\n"))
         self.assertGreater(len(card_png), 1000)
 
     def test_replaces_only_delimited_gallery(self):
