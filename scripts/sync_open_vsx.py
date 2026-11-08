@@ -27,6 +27,13 @@ PREFERRED_ORDER = ("orquestivo", "probato-pr", "indizivo", "saturivo")
 COLUMNS = 4
 MAX_ICON_BYTES = 256 * 1024
 ACCENTS = {"orquestivo": "#7A9CFF", "probato-pr": "#63FF8A", "indizivo": "#42D6C5", "saturivo": "#F0B76B"}
+# Publisher-owned, official Marketplace icon paths, confirmed against each extension package.json.
+OFFICIAL_ICONS = {
+    "orquestivo": "https://raw.githubusercontent.com/Drako01/orquestivo/main/media/icon-128.png",
+    "probato-pr": "https://raw.githubusercontent.com/Drako01/probato-pr/main/media/logo.png",
+    "indizivo": "https://raw.githubusercontent.com/Drako01/indizivo/main/media/indizivo-icon-128.png",
+    "saturivo": "https://raw.githubusercontent.com/Drako01/saturivo/main/media/saturivo-icon.png",
+}
 
 # Embedded SVG glyphs are the fallback when an icon cannot be downloaded.
 # The Open VSX icon is preferred and embedded as a safe bitmap during sync.
@@ -62,27 +69,27 @@ def safe_icon(url: object) -> str:
 
 
 def get_icon_data(url: str) -> str:
-    """Fetch a bounded bitmap; never embed remote SVG, scripts, or arbitrary files."""
-    if not safe_icon(url):
-        return ""
-    try:
-        request = Request(url, headers={"User-Agent": "Drako01-profile-gallery/2.0"})
-        with urlopen(request, timeout=15) as response:
-            data = response.read(MAX_ICON_BYTES + 1)
-            final_url = urlparse(response.geturl())
-            if final_url.hostname != "open-vsx.org" or len(data) > MAX_ICON_BYTES:
-                return ""
-            if data.startswith(b"\x89PNG\r\n\x1a\n"):
-                mime = "image/png"
-            elif data.startswith(b"\xff\xd8\xff"):
-                mime = "image/jpeg"
-            elif data[:4] == b"RIFF" and data[8:12] == b"WEBP":
-                mime = "image/webp"
-            else:
-                return ""
-            return f"data:{mime};base64,{base64.b64encode(data).decode('ascii')}"
-    except (OSError, ValueError):
-        return ""
+    """Embed the actual PNG/JPEG/WebP icon. Never substitute a made-up brand mark."""
+    parsed = urlparse(url)
+    allowed = safe_icon(url) or url in OFFICIAL_ICONS.values()
+    if not allowed or parsed.scheme != "https":
+        raise ValueError(f"Icon URL is not approved: {url}")
+
+    request = Request(url, headers={"User-Agent": "Drako01-profile-gallery/2.0"})
+    with urlopen(request, timeout=20) as response:
+        data = response.read(MAX_ICON_BYTES + 1)
+        final_url = urlparse(response.geturl())
+        if final_url.hostname not in ("open-vsx.org", "raw.githubusercontent.com") or len(data) > MAX_ICON_BYTES:
+            raise ValueError(f"Untrusted or oversized icon: {url}")
+        if data.startswith(b"\\x89PNG\\r\\n\\x1a\\n"):
+            mime = "image/png"
+        elif data.startswith(b"\\xff\\xd8\\xff"):
+            mime = "image/jpeg"
+        elif data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+            mime = "image/webp"
+        else:
+            raise ValueError(f"Unsupported icon format: {url}")
+    return f"data:{mime};base64,{base64.b64encode(data).decode('ascii')}"
 
 
 def collect_extensions(fetch=get_json) -> list[dict]:
@@ -147,11 +154,9 @@ def render_card(item: dict, icon_data: str = "") -> str:
         f'  <text x="19" y="{130 + i * 19}" fill="#B9C9D6" font-size="13" font-weight="400">{html.escape(line, quote=False)}</text>'
         for i, line in enumerate(description)
     )
-    icon = (
-        f'<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="{html.escape(icon_data, quote=True)}"/>'
-        if icon_data.startswith(("data:image/png;base64,", "data:image/jpeg;base64,", "data:image/webp;base64,"))
-        else FALLBACK_ICONS.get(slug, '<text x="49" y="59" text-anchor="middle" fill="#63FF8A" font-size="23" font-weight="700">' + html.escape(slug[:2].upper()) + '</text>')
-    )
+    if not icon_data.startswith(("data:image/png;base64,", "data:image/jpeg;base64,", "data:image/webp;base64,")):
+        raise ValueError(f"Real published icon is required: {slug}")
+    icon = f'<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="{html.escape(icon_data, quote=True)}"/>'
     downloads = f'{int(item["downloads"]):,}'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="252" height="254" viewBox="0 0 252 254" role="img" aria-label="{html.escape(str(item["name"]), quote=True)}, version {version}, {downloads} downloads">
 <defs>
@@ -216,7 +221,9 @@ def main() -> None:
     CARDS_DIR.mkdir(parents=True, exist_ok=True)
     # Prepare all outputs first. Do not touch the README if the catalog is unavailable.
     cards = {
-        CARDS_DIR / f'{item["slug"]}.svg': render_card(item, get_icon_data(item["icon"]))
+        CARDS_DIR / f'{item["slug"]}.svg': render_card(
+            item, get_icon_data(OFFICIAL_ICONS.get(item["slug"]) or item["icon"])
+        )
         for item in extensions
     }
     changes = 0
