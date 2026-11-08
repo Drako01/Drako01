@@ -66,11 +66,15 @@ def collect_extensions(fetch=get_json) -> list[dict]:
             raise ValueError(f"Invalid version for {slug}")
         files = metadata.get("files") or {}
         icon = safe_icon(files.get("icon")) if isinstance(files, dict) else ""
+        downloads = metadata.get("downloadCount")
+        if isinstance(downloads, bool) or not isinstance(downloads, int) or downloads < 0:
+            raise ValueError(f"Invalid download count for {slug}")
         extensions.append({
             "slug": slug,
             "name": display_name,
             "description": metadata.get("description") or "VS Code extension published on Open VSX",
             "version": version,
+            "downloads": downloads,
             "icon": icon,
         })
 
@@ -98,6 +102,7 @@ def render_gallery(extensions: list[dict]) -> str:
             title = html.escape(str(item["name"]), quote=True)
             description = html.escape(clipped(item["description"]), quote=True)
             version = html.escape(str(item["version"]), quote=True)
+            downloads = f'{item["downloads"]:,}'
             icon = safe_icon(item.get("icon"))
             image = (
                 f'<img src="{html.escape(icon, quote=True)}" width="58" height="58" alt="{title} icon" />'
@@ -108,7 +113,7 @@ def render_gallery(extensions: list[dict]) -> str:
                 f'        <a href="{url}">{image}</a>',
                 f'        <p><strong><a href="{url}">{title}</a></strong></p>',
                 f'        <sub>{description}</sub>',
-                f'        <p><code>v{version}</code> · <a href="{url}">Open VSX</a></p>',
+                f'        <p><code>v{version}</code> · ⬇ {downloads} downloads</p>',
                 "      </td>",
             ])
         for _ in range(COLUMNS - len(extensions[offset: offset + COLUMNS])):
