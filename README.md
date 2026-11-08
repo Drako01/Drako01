@@ -54,60 +54,72 @@ accelerate implementation while keeping code review, testing, and technical deci
 <a id="selected-projects"></a>
 <img src="assets/sections/selected-projects.svg" alt="Selected projects" height="52" />
 
-### ArmotuSitio 2.0 — business platform and project management
+### ArmotuSitio 2.0 — Business platform & work management
 
 <a href="https://armotusitio.com.ar/">
   <img src="assets/projects/armotusitio-platform.svg" alt="ArmotuSitio business platform architecture" width="100%" />
 </a>
 
-I design and develop a business management platform that combines CRM, client workflows,
-budgets, role-based permissions, analytics, and an integrated project management module.
+**ArmotuSitio 2.0** is my flagship business software project: an actively developed, modular platform that brings operational workflows, customer management, and project delivery into a unified experience.
 
-- **Project management:** epics, projects, tasks, Kanban boards, sprints, backlog, dependencies, capacity planning, and releases; inspired by workflows found in Jira and ClickUp.
-- **Engineering:** PHP API and service layers, MySQL, Next.js, TypeScript, authentication, RBAC, and CI/CD.
-- **Business features:** client portal, quotations, scheduling, integrations, and internal backoffice.
+**Product and business scope**
+- **CRM and commercial operations:** customer records, leads, budgets and quotations, service/product management, and business follow-up.
+- **Work management:** epics, projects, issues and tasks; Kanban boards, backlogs, sprints, dependencies, rich-text editing, and attachment workflows.
+- **Operational modules:** appointments, scheduling, coordination, customer interactions, and integrations designed around practical business needs.
+- **Governance and administration:** roles and permissions, auditability, validation, and tools for running business processes consistently.
 
-**Private source code.** [Visit ArmotuSitio](https://armotusitio.com.ar/)
+**Engineering and architecture**
+- **Frontend:** Next.js, React, TypeScript, responsive backoffice interfaces, and static-export deployment where required.
+- **Backend and data:** PHP service/API layers, MySQL, modular responsibilities, and structured business data.
+- **Security:** role-based access control, protected sessions, CSRF defenses, optional two-factor authentication, and authorization boundaries.
+- **Delivery:** automated testing, CI/CD, integration workflows, maintainability, and incremental releases.
+- **Experience:** multilingual content (ES/EN/PT), accessibility considerations, and responsive UX.
 
-### RedEvent — modular event-management SaaS
+This is **ongoing product development**, not a claim that every planned module is already commercially available. The source code is private; the product and technical experience are documented without exposing confidential implementation details.
 
-A privately developed SaaS project built around a **Go backend**, **PostgreSQL**, **Next.js**,
-REST APIs, authentication, RBAC, modular applications, and automated quality checks.
+**[Visit ArmotuSitio](https://armotusitio.com.ar/)**
 
-- **Engineering focus:** API design, domain boundaries, multi-application architecture, testing, and CI/CD.
-- **Development workflow:** automated verification and AI-assisted engineering workflows.
-- **Status:** evolving project; not presented as a finished commercial product.
+<a id="vs-code-extensions"></a>
+<h2>VS Code Extensions</h2>
 
-**Private source code.**
+I also build and publish developer tools under the **armotusitio** publisher on Open VSX. These extensions focus on CI/CD, evidence-based code review, reproducible diagnostics, and performance analysis.
 
-### BellaGema — e-commerce for a real business
+The gallery is synchronized with Open VSX: **version numbers, cumulative downloads, and newly published extensions** are refreshed automatically. Download totals represent package downloads, not unique users.
 
-<a href="https://bellagema.com.ar/">
-  <img src="assets/projects/bellagema-commerce.svg" alt="BellaGema e-commerce platform architecture" width="100%" />
-</a>
+<!-- OPEN_VSX_EXTENSIONS:START -->
+<table>
+  <tbody>
+    <tr>
+      <td width="25%" align="center" valign="top">
+        <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="https://raw.githubusercontent.com/Drako01/orquestivo/main/media/icon-128.png" width="58" height="58" alt="Orquestivo icon" /></a>
+        <p><strong><a href="https://open-vsx.org/extension/armotusitio/orquestivo">Orquestivo</a></strong></p>
+        <sub>Design, inspect and verify CI/CD workflows with evidence-backed diagnostics.</sub>
+        <p><code>v0.1.1</code> · ⬇ ~252 downloads</p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="https://raw.githubusercontent.com/Drako01/probato-pr/main/media/logo.png" width="58" height="58" alt="Probato PR icon" /></a>
+        <p><strong><a href="https://open-vsx.org/extension/armotusitio/probato-pr">Probato PR</a></strong></p>
+        <sub>Evidence-based pull request analysis and change verification.</sub>
+        <p><code>v0.6.0</code> · ⬇ ~1.1k downloads</p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="https://raw.githubusercontent.com/Drako01/indizivo/main/media/indizivo-icon-128.png" width="58" height="58" alt="Indizivo icon" /></a>
+        <p><strong><a href="https://open-vsx.org/extension/armotusitio/indizivo">Indizivo</a></strong></p>
+        <sub>Evidence-first, reproducible development environment diagnostics.</sub>
+        <p><code>v0.2.2</code> · ⬇ ~720 downloads</p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="https://raw.githubusercontent.com/Drako01/saturivo/main/media/saturivo-icon.png" width="58" height="58" alt="Saturivo icon" /></a>
+        <p><strong><a href="https://open-vsx.org/extension/armotusitio/saturivo">Saturivo</a></strong></p>
+        <sub>Evidence-based load, concurrency and API performance diagnostics.</sub>
+        <p><code>v0.2.2</code> · ⬇ ~164 downloads</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- OPEN_VSX_EXTENSIONS:END -->
 
-Full Stack development of an e-commerce platform with storefront, catalog, cart,
-checkout, order management, and backoffice operations.
-
-- **Integrations:** Mercado Pago, shipping flows, and operational processes.
-- **Stack:** Next.js, React, PHP, MySQL, and GitHub Actions.
-
-**Private source code.** [Visit BellaGema](https://bellagema.com.ar/)
-
-### Gestión Inmobiliaria — property management platform
-
-A privately developed business application with a **Go backend**, **REST APIs**,
-and a **Next.js frontend**, focused on property and rental management workflows.
-
-- **Engineering focus:** domain modeling, service boundaries, data persistence, and application delivery.
-- **Status:** evolving project.
-
-**Private source code.**
-
-### Public engineering examples
-
-For code that can be reviewed publicly, explore my [repositories](https://github.com/Drako01?tab=repositories),
-including documentation, API examples, and application experiments.
+<sub>Initial figures are approximate, based on the Open VSX catalog display. The first scheduled synchronization replaces them with the API-reported totals.</sub>
 
 <a id="experience"></a>
 <img src="assets/sections/experience.svg" alt="Experience" height="52" />
