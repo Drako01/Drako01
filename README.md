@@ -90,7 +90,7 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 <p align="center">
   <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.1.1; 288 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.0.0; 1,430 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.0.1; 1,430 downloads" /></a>
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.3.0; 878 downloads" /></a>
 </p>
