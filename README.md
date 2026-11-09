@@ -88,19 +88,19 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.1.1; 274 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.1.1; 282 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.0.0; 1,344 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.0.0; 1,366 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.2.2; 760 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.2.2; 764 downloads" /></a>
 </p>
 
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.2.2; 328 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.2.2; 336 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 186 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 238 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.1.2; 254 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.1.2; 338 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
