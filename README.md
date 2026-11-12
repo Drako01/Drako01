@@ -57,7 +57,7 @@ accelerate implementation while keeping code review, testing, and technical deci
 ### ArmotuSitio 2.0 — Business platform & work management
 
 <a href="https://armotusitio.com.ar/">
-  <img src="assets/projects/armotusitio-platform.svg" alt="ArmotuSitio business platform architecture" width="100%" />
+  <img src="assets/projects/armotusitio-platform.svg" alt="ArmotuSitio 2.0 — business platform and work management" width="100%" />
 </a>
 
 **ArmotuSitio 2.0** is my flagship business software project: an actively developed, modular platform that brings operational workflows, customer management, and project delivery into a unified experience.
@@ -80,6 +80,21 @@ accelerate implementation while keeping code review, testing, and technical deci
 This is **ongoing product development**, not a claim that every planned module is already commercially available. The source code is private; the product and technical experience are documented without exposing confidential implementation details.
 
 **[Visit ArmotuSitio](https://armotusitio.com.ar/)**
+
+### ArmotuSitio IDE — AI coding, without losing control
+
+<a href="https://armotusitio.com.ar/ide/">
+  <img src="assets/projects/armotusitio-ide.svg" alt="ArmotuSitio IDE — download for Windows x64 and Linux x64" width="100%" />
+</a>
+
+**ArmotuSitio IDE** is my own code editor, built on **Code - OSS**, where **Claude Code** and **Codex** work on your project under the permissions you approve.
+
+- **Chat harness:** the AI reads, edits, runs commands and uses git, and every sensitive action shows what, where, the risk and how long the permission lasts.
+- **Project harness:** tests, lint and typecheck with history, cancellation and evidence.
+- **Integrations:** isolated AI accounts per provider, custom MCP servers with browser-based OAuth, and ArmotuSitio Work Management from the chat.
+- **Distribution:** Open VSX extension catalog, signed update manifests and SHA-256 checksums for every installer.
+
+**[Download ArmotuSitio IDE](https://armotusitio.com.ar/ide/)** — Windows x64 (installer and portable) and Linux x64 (`.deb`, `.rpm`, `.tar.gz`).
 
 <a id="vs-code-extensions"></a>
 <img src="assets/sections/vs-code-extensions.svg" alt="VS Code extensions" height="52" />
