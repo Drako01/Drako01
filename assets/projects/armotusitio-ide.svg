@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">ArmotuSitio IDE — AI coding, without losing control</title>
+  <desc id="description">Terminal-style banner for ArmotuSitio IDE, an editor based on Code - OSS with a Claude Code and Codex chat harness, explicit permissions, custom MCP servers and signed updates, available for Windows x64 and Linux x64. Shows an IDE window with a permission request in the chat panel.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f13"/>
+      <stop offset="1" stop-color="#121a20"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9ed32"/>
+      <stop offset="1" stop-color="#d7c800"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="1" cy="0" r="1">
+      <stop offset="0" stop-color="#f9ed32" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#f9ed32" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#ffffff" opacity="0.018"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="20" fill="url(#halo)"/>
+  <rect width="1200" height="400" rx="20" fill="url(#scanlines)"/>
+  <rect x="1" y="1" width="1198" height="398" rx="19" fill="none" stroke="#2f3b45" stroke-width="2"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace">
+    <!-- Window header -->
+    <g transform="translate(56 30) scale(0.6)">
+      <rect width="48" height="48" rx="10" fill="#141b22" stroke="#2f3b45" stroke-width="1.5"/>
+      <path d="M12 36 L24 10 L36 36" fill="none" stroke="url(#brand)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5 28 H31.5" stroke="#3a4756" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <text x="98" y="52" fill="#6b7d8c" font-size="13" letter-spacing="1.2">DRAKO01@ARMOTUSITIO:~/IDE</text>
+    <rect x="1060" y="34" width="84" height="26" rx="13" fill="#1c1d12" stroke="#f9ed32" stroke-opacity="0.6"/>
+    <text x="1102" y="52" fill="#f9ed32" font-size="12" font-weight="700" letter-spacing="1.6" text-anchor="middle">NEW</text>
+    <path d="M40 76 H1160" stroke="#222d36"/>
+
+    <!-- Identity -->
+    <text x="64" y="118" fill="#63ff8a" font-size="16" filter="url(#glow)">&gt; armotusitio-ide --download</text>
+    <text x="64" y="166" font-size="40" font-weight="700" letter-spacing="0.5"><tspan fill="#f2f6f8">ARMOTU</tspan><tspan fill="url(#brand)">SITIO</tspan><tspan fill="#f2f6f8"> IDE</tspan></text>
+    <text x="64" y="200" fill="#9fb0bd" font-size="17">AI coding, without losing control.</text>
+
+    <!-- Features -->
+    <g font-size="14" fill="#c9d4dc">
+      <text x="64" y="240"><tspan fill="#63ff8a">▸</tspan> Claude Code &amp; Codex chat harness</text>
+      <text x="64" y="264"><tspan fill="#63ff8a">▸</tspan> Explicit, time-boxed permissions</text>
+      <text x="64" y="288"><tspan fill="#63ff8a">▸</tspan> Custom MCP servers · Open VSX catalog</text>
+      <text x="64" y="312"><tspan fill="#63ff8a">▸</tspan> Signed updates · SHA-256 checksums</text>
+    </g>
+
+    <!-- Call to action -->
+    <rect x="64" y="332" width="200" height="40" rx="10" fill="url(#brand)"/>
+    <path d="M86 343 v12 m-5 -5 l5 5 l5 -5 M80 360 h12" fill="none" stroke="#141b22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="104" y="357" fill="#141b22" font-size="14" font-weight="700" letter-spacing="0.8">DOWNLOAD IDE</text>
+    <g font-size="11" letter-spacing="1.2" fill="#9fb0bd">
+      <rect x="280" y="338" width="112" height="28" rx="14" fill="#141d24" stroke="#2f3b45"/>
+      <text x="336" y="356" text-anchor="middle">WINDOWS x64</text>
+      <rect x="402" y="338" width="100" height="28" rx="14" fill="#141d24" stroke="#2f3b45"/>
+      <text x="452" y="356" text-anchor="middle">LINUX x64</text>
+    </g>
+
+    <!-- IDE window -->
+    <g transform="translate(640 100)">
+      <rect width="504" height="272" rx="14" fill="#0b1117" stroke="#2f3b45" stroke-width="1.5"/>
+      <circle cx="18" cy="16" r="4" fill="#3a4756"/>
+      <circle cx="32" cy="16" r="4" fill="#3a4756"/>
+      <circle cx="46" cy="16" r="4" fill="#f9ed32"/>
+      <text x="252" y="20" fill="#6b7d8c" font-size="10.5" text-anchor="middle">harness.ts — ArmotuSitio IDE</text>
+      <path d="M0 32 H504" stroke="#222d36"/>
+
+      <!-- Activity bar -->
+      <path d="M0 32 H40 V258 a14 14 0 0 1 -14 14 H14 a14 14 0 0 1 -14 -14 Z" fill="#0e151c"/>
+      <rect x="0" y="46" width="2.5" height="20" fill="#f9ed32"/>
+      <g fill="none" stroke-width="1.6">
+        <rect x="12" y="48" width="16" height="16" rx="3" stroke="#f9ed32"/>
+        <rect x="12" y="80" width="16" height="16" rx="3" stroke="#3a4756"/>
+        <rect x="12" y="112" width="16" height="16" rx="3" stroke="#3a4756"/>
+        <rect x="12" y="144" width="16" height="16" rx="3" stroke="#3a4756"/>
+      </g>
+
+      <!-- Editor -->
+      <g font-size="9" fill="#3a4756" text-anchor="end">
+        <text x="60" y="58">1</text><text x="60" y="76">2</text><text x="60" y="94">3</text>
+        <text x="60" y="112">4</text><text x="60" y="130">5</text><text x="60" y="148">6</text>
+        <text x="60" y="166">7</text><text x="60" y="184">8</text><text x="60" y="202">9</text>
+        <text x="60" y="220">10</text><text x="60" y="238">11</text>
+      </g>
+      <g>
+        <rect x="72" y="51" width="44" height="7" rx="3.5" fill="#63ff8a" opacity="0.75"/><rect x="122" y="51" width="70" height="7" rx="3.5" fill="#7aa2c8"/>
+        <rect x="72" y="87" width="56" height="7" rx="3.5" fill="#f9ed32" opacity="0.8"/><rect x="134" y="87" width="92" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="88" y="105" width="38" height="7" rx="3.5" fill="#63ff8a" opacity="0.75"/><rect x="132" y="105" width="110" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="88" y="123" width="72" height="7" rx="3.5" fill="#7aa2c8"/><rect x="166" y="123" width="48" height="7" rx="3.5" fill="#d7c800" opacity="0.7"/>
+        <rect x="104" y="141" width="120" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="104" y="159" width="64" height="7" rx="3.5" fill="#f9ed32" opacity="0.8"/><rect x="174" y="159" width="52" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="88" y="177" width="30" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="72" y="195" width="20" height="7" rx="3.5" fill="#52606d"/>
+        <rect x="72" y="231" width="52" height="7" rx="3.5" fill="#63ff8a" opacity="0.75"/><rect x="130" y="231" width="84" height="7" rx="3.5" fill="#7aa2c8"/>
+      </g>
+
+      <!-- Chat panel -->
+      <path d="M296 32 H504 V258 a14 14 0 0 1 -14 14 H296 Z" fill="#0e151c"/>
+      <path d="M296 32 V272" stroke="#222d36"/>
+      <text x="310" y="52" fill="#8796a3" font-size="9.5" letter-spacing="1.2">CHAT · CLAUDE CODE</text>
+
+      <rect x="350" y="62" width="140" height="32" rx="8" fill="#1a2530"/>
+      <rect x="362" y="72" width="104" height="5" rx="2.5" fill="#6b7d8c"/>
+      <rect x="362" y="82" width="68" height="5" rx="2.5" fill="#6b7d8c"/>
+
+      <rect x="310" y="102" width="160" height="32" rx="8" fill="#121c25"/>
+      <rect x="322" y="112" width="120" height="5" rx="2.5" fill="#52606d"/>
+      <rect x="322" y="122" width="84" height="5" rx="2.5" fill="#52606d"/>
+
+      <rect x="310" y="144" width="180" height="114" rx="9" fill="#17160c" stroke="#f9ed32" stroke-opacity="0.55"/>
+      <text x="322" y="164" fill="#f9ed32" font-size="9" font-weight="700" letter-spacing="1.2">PERMISSION REQUEST</text>
+      <text x="322" y="186" fill="#f2f6f8" font-size="12">$ pnpm test</text>
+      <text x="322" y="204" fill="#8796a3" font-size="9">scope: workspace</text>
+      <text x="322" y="218" fill="#8796a3" font-size="9">risk: low · 15 min</text>
+      <rect x="322" y="228" width="92" height="20" rx="5" fill="url(#brand)"/>
+      <text x="368" y="242" fill="#141b22" font-size="9" font-weight="700" text-anchor="middle">ALLOW ONCE</text>
+      <rect x="420" y="228" width="58" height="20" rx="5" fill="none" stroke="#3a4756"/>
+      <text x="449" y="242" fill="#9fb0bd" font-size="9" text-anchor="middle">DENY</text>
+    </g>
+  </g>
+</svg>

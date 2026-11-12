@@ -1,36 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
-  <title id="title">ArmotuSitio business platform</title>
-  <desc id="description">Next.js product experience connected to a modular PHP API and MySQL business core.</desc>
+  <title id="title">ArmotuSitio 2.0 — Business platform and work management</title>
+  <desc id="description">Terminal-style banner for ArmotuSitio 2.0: CRM, work management, scheduling and governance modules, built with Next.js, React, PHP 8, MySQL and n8n, next to a Kanban board with sprint progress.</desc>
+
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#101820"/>
-      <stop offset="1" stop-color="#1c2732"/>
+      <stop offset="0" stop-color="#0a0f13"/>
+      <stop offset="1" stop-color="#121a20"/>
     </linearGradient>
-    <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#f9ed32"/>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9ed32"/>
       <stop offset="1" stop-color="#d7c800"/>
     </linearGradient>
+    <radialGradient id="halo" cx="1" cy="0" r="1">
+      <stop offset="0" stop-color="#f9ed32" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#f9ed32" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#ffffff" opacity="0.018"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
+
   <rect width="1200" height="360" rx="20" fill="url(#bg)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#34404c" stroke-width="2"/>
-  <text x="64" y="88" fill="#f9ed32" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">BUSINESS PLATFORM</text>
-  <text x="64" y="145" fill="#ffffff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="700">ArmotuSitio</text>
-  <text x="64" y="190" fill="#aab6c2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">Acquisition, client operations, analytics, and delivery.</text>
-  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
-    <rect x="64" y="237" width="108" height="38" rx="19" fill="#202c37" stroke="#3a4756"/><text x="89" y="262" fill="#ffffff">Next.js</text>
-    <rect x="184" y="237" width="94" height="38" rx="19" fill="#202c37" stroke="#3a4756"/><text x="211" y="262" fill="#ffffff">PHP 8</text>
-    <rect x="290" y="237" width="100" height="38" rx="19" fill="#202c37" stroke="#3a4756"/><text x="315" y="262" fill="#ffffff">MySQL</text>
-    <rect x="402" y="237" width="84" height="38" rx="19" fill="#202c37" stroke="#3a4756"/><text x="428" y="262" fill="#ffffff">n8n</text>
-  </g>
-  <g transform="translate(715 55)">
-    <rect width="405" height="250" rx="18" fill="#0d141b" stroke="#3a4756"/>
-    <rect x="24" y="24" width="357" height="38" rx="8" fill="#18232d"/>
-    <circle cx="48" cy="43" r="5" fill="#f9ed32"/><rect x="65" y="37" width="112" height="12" rx="6" fill="#52606d"/>
-    <rect x="24" y="82" width="166" height="142" rx="12" fill="#18232d"/>
-    <path d="M49 190l34-44 27 22 33-58 24 80z" fill="url(#yellow)" opacity="0.9"/>
-    <rect x="210" y="82" width="171" height="64" rx="12" fill="#18232d"/>
-    <rect x="230" y="103" width="82" height="10" rx="5" fill="#52606d"/><rect x="230" y="122" width="121" height="8" rx="4" fill="#35424e"/>
-    <rect x="210" y="160" width="171" height="64" rx="12" fill="#18232d"/>
-    <circle cx="241" cy="192" r="13" fill="#f9ed32"/><rect x="264" y="181" width="88" height="9" rx="4" fill="#52606d"/><rect x="264" y="199" width="62" height="7" rx="3" fill="#35424e"/>
+  <rect width="1200" height="360" rx="20" fill="url(#halo)"/>
+  <rect width="1200" height="360" rx="20" fill="url(#scanlines)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#2f3b45" stroke-width="2"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace">
+    <!-- Window header -->
+    <g transform="translate(56 30) scale(0.6)">
+      <rect width="48" height="48" rx="10" fill="#141b22" stroke="#2f3b45" stroke-width="1.5"/>
+      <path d="M12 36 L24 10 L36 36" fill="none" stroke="url(#brand)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.5 28 H31.5" stroke="#3a4756" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <text x="98" y="52" fill="#6b7d8c" font-size="13" letter-spacing="1.2">DRAKO01@ARMOTUSITIO:~/PLATFORM</text>
+    <text x="1144" y="52" fill="#f9ed32" font-size="12" letter-spacing="1.6" text-anchor="end">● IN ACTIVE DEVELOPMENT</text>
+    <path d="M40 76 H1160" stroke="#222d36"/>
+
+    <!-- Identity -->
+    <text x="64" y="118" fill="#63ff8a" font-size="16" filter="url(#glow)">&gt; armotusitio --about</text>
+    <text x="64" y="166" font-size="42" font-weight="700" letter-spacing="0.5"><tspan fill="#f2f6f8">ARMOTU</tspan><tspan fill="url(#brand)">SITIO</tspan><tspan fill="#6b7d8c" font-size="26"> 2.0</tspan></text>
+    <text x="64" y="200" fill="#9fb0bd" font-size="17">Business platform &amp; work management.</text>
+
+    <!-- Modules -->
+    <g font-size="14">
+      <text x="64" y="244"><tspan fill="#63ff8a">[✓]</tspan><tspan fill="#c9d4dc"> CRM &amp; sales ops</tspan></text>
+      <text x="340" y="244"><tspan fill="#63ff8a">[✓]</tspan><tspan fill="#c9d4dc"> Work management</tspan></text>
+      <text x="64" y="272"><tspan fill="#63ff8a">[✓]</tspan><tspan fill="#c9d4dc"> Scheduling &amp; ops</tspan></text>
+      <text x="340" y="272"><tspan fill="#63ff8a">[✓]</tspan><tspan fill="#c9d4dc"> RBAC · audit · 2FA</tspan></text>
+    </g>
+    <text x="64" y="318" fill="#d7c800" font-size="13" letter-spacing="1.6">NEXT.JS · REACT · PHP 8 · MYSQL · N8N</text>
+
+    <!-- Kanban board -->
+    <g transform="translate(700 100)">
+      <rect width="444" height="228" rx="14" fill="#0b1117" stroke="#2f3b45" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#8796a3" font-size="11" letter-spacing="1.6">WORK MANAGEMENT · BOARD</text>
+      <text x="424" y="30" fill="#f9ed32" font-size="11" letter-spacing="1.2" text-anchor="end">● LIVE</text>
+
+      <g font-size="10" letter-spacing="1.2">
+        <rect x="20" y="44" width="128" height="134" rx="9" fill="#10181f"/>
+        <text x="32" y="62" fill="#6b7d8c">TODO</text><text x="136" y="62" fill="#4a5866" text-anchor="end">3</text>
+        <rect x="158" y="44" width="128" height="134" rx="9" fill="#10181f"/>
+        <text x="170" y="62" fill="#6b7d8c">DOING</text><text x="274" y="62" fill="#4a5866" text-anchor="end">2</text>
+        <rect x="296" y="44" width="128" height="134" rx="9" fill="#10181f"/>
+        <text x="308" y="62" fill="#6b7d8c">DONE</text><text x="412" y="62" fill="#4a5866" text-anchor="end">3</text>
+      </g>
+
+      <!-- TODO cards -->
+      <rect x="28" y="72" width="112" height="28" rx="6" fill="#172129"/>
+      <rect x="38" y="83" width="62" height="6" rx="3" fill="#52606d"/>
+      <rect x="28" y="106" width="112" height="28" rx="6" fill="#172129"/>
+      <rect x="38" y="117" width="78" height="6" rx="3" fill="#52606d"/>
+      <rect x="28" y="140" width="112" height="28" rx="6" fill="#172129"/>
+      <rect x="38" y="151" width="48" height="6" rx="3" fill="#52606d"/>
+
+      <!-- DOING cards -->
+      <rect x="166" y="72" width="112" height="28" rx="6" fill="#1c1d12" stroke="#f9ed32" stroke-opacity="0.7"/>
+      <circle cx="179" cy="86" r="4" fill="#f9ed32"/>
+      <rect x="190" y="83" width="70" height="6" rx="3" fill="#8a8340"/>
+      <rect x="166" y="106" width="112" height="28" rx="6" fill="#172129"/>
+      <circle cx="179" cy="120" r="4" fill="#d7c800" opacity="0.6"/>
+      <rect x="190" y="117" width="54" height="6" rx="3" fill="#52606d"/>
+
+      <!-- DONE cards -->
+      <g fill="none" stroke="#63ff8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="304" y="72" width="112" height="28" rx="6" fill="#132019" stroke="none"/>
+        <path d="M313 86 l3.5 3.5 l6.5 -7"/>
+        <rect x="304" y="106" width="112" height="28" rx="6" fill="#132019" stroke="none"/>
+        <path d="M313 120 l3.5 3.5 l6.5 -7"/>
+        <rect x="304" y="140" width="112" height="28" rx="6" fill="#132019" stroke="none"/>
+        <path d="M313 154 l3.5 3.5 l6.5 -7"/>
+      </g>
+      <rect x="332" y="83" width="66" height="6" rx="3" fill="#2f5a3e"/>
+      <rect x="332" y="117" width="50" height="6" rx="3" fill="#2f5a3e"/>
+      <rect x="332" y="151" width="72" height="6" rx="3" fill="#2f5a3e"/>
+
+      <!-- Sprint progress -->
+      <text x="20" y="206" fill="#6b7d8c" font-size="10" letter-spacing="1.2">SPRINT</text>
+      <rect x="78" y="200" width="300" height="6" rx="3" fill="#1b252e"/>
+      <rect x="78" y="200" width="216" height="6" rx="3" fill="url(#brand)"/>
+      <text x="424" y="206" fill="#f9ed32" font-size="10" text-anchor="end">72%</text>
+    </g>
   </g>
 </svg>
