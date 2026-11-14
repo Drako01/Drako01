@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title description">
+  <title id="title">ArmotuSitio community on Discord</title>
+  <desc id="description">A place to talk code, share projects and connect. Join the ArmotuSitio Discord community.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#141d25"/>
+      <stop offset="1" stop-color="#0a1016"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.1" cy="0.5" r="0.8">
+      <stop stop-color="#f9ed32" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#f9ed32" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="958" height="258" rx="20" fill="url(#background)" stroke="#2f3b45" stroke-width="2"/>
+  <rect x="2" y="2" width="956" height="256" rx="19" fill="url(#light)"/>
+  <path d="M48 50 H80" stroke="#f9ed32" stroke-width="3" stroke-linecap="round"/>
+  <text x="94" y="55" fill="#b5c2cc" font-family="Consolas, Liberation Mono, monospace" font-size="14" letter-spacing="2">THE COMMUNITY / DISCORD</text>
+  <g transform="translate(48 84)">
+    <rect width="76" height="76" rx="20" fill="#1d2524" stroke="#535333"/>
+    <path d="M20 57 L38 19 L56 57" fill="none" stroke="#f9ed32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29 46 H47" stroke="#81909c" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="148" y="121" fill="#f2f6f8" font-size="38" font-weight="700">Armotu<tspan fill="#f9ed32">Sitio</tspan></text>
+    <text x="148" y="155" fill="#c0cbd4" font-size="19">Talk code. Share projects. Connect.</text>
+    <rect x="696" y="92" width="216" height="62" rx="12" fill="#f9ed32"/>
+    <text x="724" y="130" fill="#10161c" font-size="19" font-weight="700">Join on Discord</text>
+    <path d="M875 116 L882 123 L875 130 M870 123 H882" fill="none" stroke="#10161c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M48 190 H912" stroke="#2b363f"/>
+  <text x="48" y="225" fill="#9fb0bd" font-family="Consolas, Liberation Mono, monospace" font-size="14" letter-spacing="0.6">DEVELOPMENT / TOOLS / IDEAS</text>
+  <text x="912" y="225" text-anchor="end" fill="#b5c2cc" font-family="Consolas, Liberation Mono, monospace" font-size="14">DRAKO01 + COMMUNITY</text>
+</svg>

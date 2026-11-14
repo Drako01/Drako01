@@ -192,3 +192,13 @@ I am open to **Backend and Full Stack Software Engineer** opportunities, as well
     />
   </a>
 </p>
+
+<p align="center">
+  <a href="https://discord.com/invite/4ZND3Qq3">
+    <img
+      src="assets/discord-community.svg"
+      alt="Join the ArmotuSitio community on Discord — talk code, share projects and connect"
+      width="100%"
+    />
+  </a>
+</p>
