@@ -6,6 +6,7 @@ on:
       - README.md
       - scripts/sync_open_vsx.py
       - tests/test_sync_open_vsx.py
+      - tests/test_sync_workflow.py
       - requirements-profile-gallery.txt
       - 'assets/open-vsx/**'
       - assets/sections/vs-code-extensions.svg
@@ -40,7 +41,7 @@ jobs:
       - name: Install card renderer
         run: python -m pip install -r requirements-profile-gallery.txt
       - name: Offline contract tests
-        run: python -m unittest discover -s tests -p 'test_sync_open_vsx.py' -v
+        run: python -m unittest discover -s tests -p 'test_sync*.py' -v
       - name: Compile synchronizer
         run: python -m py_compile scripts/sync_open_vsx.py
       - name: Smoke test against live Open VSX API
@@ -69,8 +70,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          branch="automation/open-vsx-profile-sync"
-          existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          # Include the legacy branch and all run-specific sync branches.
+          existing="$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --state open \
+            --limit 100 --json number,headRefName \
+            --jq '[.[] | select(.headRefName == "automation/open-vsx-profile-sync" or (.headRefName | startswith("automation/open-vsx-profile-sync-")))] | .[0].number // empty')"
           if [[ -n "$existing" ]]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
             echo "Pending gallery PR #$existing; refusing to create a duplicate." >> "$GITHUB_STEP_SUMMARY"
@@ -85,7 +88,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          branch="automation/open-vsx-profile-sync"
+          branch="automation/open-vsx-profile-sync-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
 
           git add -- README.md assets/open-vsx/
           if git diff --cached --quiet; then
@@ -104,7 +107,7 @@ jobs:
           # PR creation with GITHUB_TOKEN does not automatically run normal
           # pull_request CI without a human's workflow approval. Validate the
           # same source and generated files here before offering the PR.
-          python -m unittest discover -s tests -p 'test_sync_open_vsx.py' -q
+          python -m unittest discover -s tests -p 'test_sync*.py' -q
           python -m py_compile scripts/sync_open_vsx.py
 
           remote_main="$(git ls-remote origin refs/heads/main | cut -f1)"
@@ -113,7 +116,7 @@ jobs:
             exit 1
           }
           if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
-            echo "::error::Old automation branch exists. Resolve it manually; never force-push."
+            echo "::error::Run-specific automation branch already exists; refusing to overwrite it."
             exit 1
           fi
           git config user.name "github-actions[bot]"
