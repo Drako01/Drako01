@@ -115,7 +115,7 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/armotusitio-icons"><img src="assets/open-vsx/armotusitio-icons.png" width="29%" alt="ArmoTuSitio Icons — v0.2.0; 400 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/armotusitio-theme"><img src="assets/open-vsx/armotusitio-theme.png" width="29%" alt="ArmoTuSitio Theme — v0.2.0; 472 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/armotusitio-theme"><img src="assets/open-vsx/armotusitio-theme.png" width="29%" alt="ArmoTuSitio Theme — v0.2.0; 490 downloads" /></a>
 </p>
 
 <p align="center">
