@@ -16,8 +16,8 @@ on:
       - scripts/sync_open_vsx.py
       - .github/workflows/sync-open-vsx-profile.yml
   schedule:
-    # Four inexpensive checks per day; commits only when the catalog changes.
-    - cron: '17 */6 * * *'
+    # Hourly check at minute 17 UTC; commit only when the catalog changes.
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
