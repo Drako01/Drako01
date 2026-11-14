@@ -82,6 +82,70 @@ gh() {
             subprocess.run(['git', 'check-ref-format', '--branch', branch],
                            check=True, capture_output=True)
 
+    def test_protected_automerge_outcomes(self):
+        """Pending approval is successful queueing; API/SHA failures remain errors."""
+        sha = 'a' * 40
+        cases = [
+            ('pending', {'headRefOid': sha, 'mergedAt': None, 'autoMergeRequest': {}}, 0, 0, 0),
+            ('merged', {'headRefOid': sha, 'mergedAt': '2026-11-14T18:00:00Z',
+                        'autoMergeRequest': None}, 0, 0, 0),
+            ('missing', {'headRefOid': sha, 'mergedAt': None, 'autoMergeRequest': None}, 0, 0, 1),
+            ('denied', {'headRefOid': sha}, 1, 0, 1),
+            ('changed', {'headRefOid': 'b' * 40}, 0, 0, 1),
+            ('api_error', {}, 0, 1, 1),
+        ]
+        mock = '''
+gh() {
+  case "$1 $2" in
+    "pr merge")
+      printf '%s\\n' "$@" > "$TEST_MERGE_ARGS"
+      return "$TEST_MERGE_EXIT"
+      ;;
+    "pr view")
+      [[ "$TEST_READ_EXIT" == 0 ]] || return "$TEST_READ_EXIT"
+      while (( $# )); do
+        if [[ "$1" == "--jq" ]]; then
+          shift
+          printf '%s' "$TEST_PR_JSON" | jq -r "$1"
+          return
+        fi
+        shift
+      done
+      return 91
+      ;;
+    *) return 90 ;;
+  esac
+}
+source "$TEST_SCRIPT" 21 "$TEST_SHA"
+'''
+        for name, metadata, merge_exit, read_exit, expected_exit in cases:
+            with self.subTest(name=name), tempfile.TemporaryDirectory() as directory:
+                summary = Path(directory) / 'summary'
+                merge_args = Path(directory) / 'merge_args'
+                env = dict(os.environ, TEST_PR_JSON=json.dumps(metadata),
+                           TEST_MERGE_EXIT=str(merge_exit), TEST_READ_EXIT=str(read_exit),
+                           TEST_MERGE_ARGS=merge_args.as_posix(), TEST_SHA=sha,
+                           TEST_SCRIPT=(ROOT / 'scripts/request_gallery_automerge.sh').as_posix(),
+                           GITHUB_REPOSITORY='test/profile', GITHUB_STEP_SUMMARY=summary.as_posix())
+                result = subprocess.run([BASH, '-e', '-o', 'pipefail'], input=mock, text=True,
+                                        env=env, capture_output=True)
+                self.assertEqual(result.returncode, expected_exit, result.stderr + result.stdout)
+                if name in ('changed', 'api_error'):
+                    self.assertFalse(merge_args.exists())
+                else:
+                    args = merge_args.read_text().splitlines()
+                    self.assertIn('--auto', args)
+                    self.assertIn('--squash', args)
+                    self.assertNotIn('--admin', args)
+                    self.assertEqual(args[args.index('--match-head-commit') + 1], sha)
+                if name == 'pending':
+                    self.assertIn('awaiting required approvals/checks', summary.read_text())
+                    self.assertNotIn('squash-merged', summary.read_text())
+                elif name == 'merged':
+                    self.assertIn('squash-merged', summary.read_text())
+                else:
+                    self.assertFalse(summary.exists())
+
 
 if __name__ == '__main__':
     unittest.main()
