@@ -127,7 +127,7 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
-<sub>Version and download counts are refreshed from Open VSX every six hours. New extensions appear automatically.</sub>
+<sub>Version and download counts are refreshed from Open VSX every hour. New extensions appear automatically.</sub>
 
 <a id="experience"></a>
 <img src="assets/sections/experience.svg" alt="Experience" height="52" />
