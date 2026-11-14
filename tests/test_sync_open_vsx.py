@@ -281,16 +281,19 @@ class GalleryTest(unittest.TestCase):
         from pathlib import Path
         workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" /
                     "sync-open-vsx-profile.yml").read_text(encoding="utf-8")
+        merge_script = (Path(__file__).resolve().parents[1] / "scripts" /
+                        "request_gallery_automerge.sh").read_text(encoding="utf-8")
         self.assertIn("cron: '17 * * * *'", workflow)
         self.assertIn("pull-requests: write", workflow)
         self.assertIn("gh pr create", workflow)
-        self.assertIn("gh pr merge", workflow)
-        self.assertIn("--squash --delete-branch --match-head-commit", workflow)
+        self.assertIn('bash scripts/request_gallery_automerge.sh "$number" "$head_sha"', workflow)
+        self.assertIn("gh pr merge", merge_script)
+        self.assertIn("--auto --squash --delete-branch --match-head-commit", merge_script)
         self.assertIn("python -m unittest discover", workflow)
         self.assertIn("Do not duplicate a pending automated PR", workflow)
         self.assertIn("git diff --cached --name-only", workflow)
-        self.assertNotIn("git push origin HEAD:main", workflow)
-        self.assertNotIn("git push -f", workflow)
+        self.assertNotIn("git push origin HEAD:main", workflow + merge_script)
+        self.assertNotIn("git push -f", workflow + merge_script)
 
 
 
