@@ -33,7 +33,11 @@ COLUMNS = 3
 MAX_ICON_BYTES = 256 * 1024
 ACCENTS = {"orquestivo": "#7A9CFF", "probato-pr": "#63FF8A", "indizivo": "#42D6C5", "saturivo": "#F0B76B"}
 # Presentation-only override for this card; Open VSX metadata and accessible name are retained.
-DISPLAY_NAME_OVERRIDES = {"probato-pr": "Probato PR"}
+DISPLAY_NAME_OVERRIDES = {
+    "probato-pr": "Probato PR",
+    "armotusitio-icons": "Icons",
+    "armotusitio-theme": "Theme",
+}
 # Publisher-owned, official Marketplace icon paths, confirmed against each extension package.json.
 OFFICIAL_ICONS = {
     "orquestivo": "https://raw.githubusercontent.com/Drako01/orquestivo/main/media/icon-128.png",

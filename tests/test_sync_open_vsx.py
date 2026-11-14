@@ -133,7 +133,7 @@ class GalleryTest(unittest.TestCase):
         # The WHAT IT DOES label is at y=116, description starts at y=154.
         self.assertGreaterEqual(154 - 116, 38)
 
-    def test_only_probato_pr_uses_short_visual_title(self):
+    def test_only_selected_extensions_use_short_visual_titles(self):
         common = {
             "description": "Proof-based verification for developers.",
             "version": "0.6.0",
@@ -152,6 +152,21 @@ class GalleryTest(unittest.TestCase):
             "data:image/png;base64,AA==",
         )
         self.assertIn('>Indizivo Studio</text>', other)
+
+        for slug, title, official_name in (
+            ("armotusitio-icons", "Icons", "ArmoTuSitio Icons"),
+            ("armotusitio-theme", "Theme", "ArmoTuSitio Theme"),
+        ):
+            with self.subTest(slug=slug):
+                svg = render_card(
+                    {**common, "slug": slug, "name": official_name},
+                    "data:image/png;base64,AA==",
+                )
+                self.assertIn(f'>{title}</text>', svg)
+                self.assertNotIn(f'>{official_name}</text>', svg)
+                # Metadata, accessible name and links remain official.
+                self.assertIn(f'aria-label="{official_name}, version', svg)
+
 
     def test_card_is_rasterized_to_png_with_embedded_logo(self):
         icon_png = svg2png(bytestring=(
