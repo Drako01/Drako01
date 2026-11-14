@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="284" viewBox="0 0 252 284" role="img" aria-label="ArmoTuSitio Icons, version 0.1.2, 142 downloads">
+<defs>
+  <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#162431"/><stop offset="100%" stop-color="#0C131E"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#63FF8A"/><stop offset="100%" stop-color="#63FF8A"/></linearGradient>
+  <radialGradient id="light"><stop offset="0%" stop-color="#63FF8A" stop-opacity=".17"/><stop offset="100%" stop-color="#63FF8A" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="1.5" y="1.5" width="249" height="281" rx="16" fill="url(#surface)" stroke="#344654" stroke-width="1.5"/>
+<rect x="2" y="2" width="248" height="2.5" rx="1.25" fill="url(#accent)"/>
+<circle cx="224" cy="19" r="95" fill="url(#light)"/>
+<rect x="14" y="16" width="72" height="72" rx="13" fill="#10202B" stroke="#2D4351"/>
+<image x="19" y="21" width="62" height="62" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAYFBMVEXw5CXv4iPu4SLt4CDs3x/r3h7q3Rzp3Bvo2xnn2hjl2Bri1Rri1BDf0RDbzQnXyQOYkRx2dCA6R1ZFRyQsMzAgKjAkKSIYHiEVGyIUGyMUGyIUGyETGyMVGSAAAEAAAAAhh4WGAAAENklEQVR42u2b23rqIBBGR1trNcY4ujchp/r+b7lDGKLVKDAk5GJnLvt9zb9cHAIocH2uvJbl2FUVlawHsq7w+IemrMvJqq5tAI0sp62qfgfQ1OX0JYuXAFUZpSo5DPBTl9FqCKCp4uWXdfMEUMkyahUPAE3k/JsDAiijl/x7D1DHBzCNAGGfP79ccraDHiBnDwDcAyTInhAMAD8fusKQ6QDU64dZYqMB9iJAQQvAHoEngEAFuQIIFgArtgKpAMpQAavViq3gpwWoAgW0+auAXgB5oACVv14jH6AOE6Dz12wFDRRBcwDlrz+4CiQECejzPxIRGQB/53+wFUCAgPv8T64C4Avo8pNE539+YkwAse/HH1L+hqkAuAJ0/l6IROdvNhgPoBVA7d+GIuV/8RQAT8Dd/CMSnf/1hbEAxN70/y4SKZ+ngAOAJl8nikTnb7cYB6ATcD//IuVvOQqAJ6DLN3ki0fksBcASoOe/Pg4p/5uhADgCHt8/ItH53984PUArgOb/uzCk/J2/AvAXQPn3WUqByt/tcGoAsR98/yLl+yvwBUCT/ztJJDrfX4EngEjM+/8hCCl/l4pJAfDV+kMkBOCrALwF6Pf/UwzueArAV4DOf+5rIuUpAE8Br9dfRsHBTwH4CaD8ocFGCg6HA04FoFZfev01GIGU76fAB8Cy/lQKDl3hNACdgG799yIAKd9LAfgJ6PJfTbciJQAfBeAlwLL+RgNwFBMAoMl//b7hKAAPAbT+f/NwhgJwF+Cw/xBH0w1xbAC1/dDr/7ePJgVp6qzAFQBN/vsVh1aQtoXjAjjvv5DynRWAswCdb1tytQpSXTgmQCuA9n/WxyLluyoARwHO+09xpPwjjgegtp96/+fwUKT8YyZGA0CT77Lo7hQcVeFYAJ77b6R8NwXgJkDnu+06RHakwnEAWgG0/3ccWWgAXBSAi4Cu/58Qz3+c6ox4ylwVgIOALv/sWZmjAjsAdv7P3uWoAJwEbBN/AEcF4CJguz35A5w6AAwFUALU+RfPQJZZFYBdgD7/8s1HnW9VAFYBdP7lmX/JdL5VAdgE0PlXIvK/HpW306HOtykAiwD2+RtmpkQAAJp8/+M30QMgH0ALUOdfjDNYRwVgFcA7f3RW8A4gTyh/x/oq4qYgZwJcTH7K+jLmpuDCB2Cevz4ouLCbQOenzO8kRWgTlKjPX9k/T8DATqjWl+3nZ+cTQcA8EPZDJbf/h3LmWgAWgAVgAVgAFoAFYAFYAOYHkP+5AQnNvAAFXOcFyGGW6x23usL1Z26A65zjoFEA+YxjQN8xqWcUEHrNJ7QHEMBcvSDvb1rNQ1Dc3TWrZmqAHuBHzpTf3zdsYg8F2TzcuCwi51dPd06bIvIM8HzrNnr7P907ljHH3+DN6zhdMX9397yeekaopeXy+7WaEqHIrbfvOw2ymgBDFmIg6x9aiSSEHMuVQAAAAABJRU5ErkJggg=="/>
+<text x="100" y="33" fill="#63FF8A" font-size="9.5" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="1.1">VS CODE TOOL</text>
+<text x="100" y="57" fill="#F2F6FA" font-size="17" font-family="Segoe UI, Arial, sans-serif" font-weight="700">ArmoTuSitio Icons</text>
+<text x="100" y="73" fill="#819BAA" font-size="11" font-family="Segoe UI, Arial, sans-serif">armotusitio</text>
+<path d="M17 103H235" stroke="#2C3D4B"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+  <text x="18" y="116" fill="#748C9E" font-size="9" font-weight="700" letter-spacing="1.2">WHAT IT DOES</text>
+  <text x="19" y="154" fill="#B9C9D6" font-size="13" font-weight="400">An original, precision-crafted</text>
+  <text x="19" y="175" fill="#B9C9D6" font-size="13" font-weight="400">SVG file icon system for VS</text>
+  <text x="19" y="196" fill="#B9C9D6" font-size="13" font-weight="400">Code. Prism, Daylight, Focus an…</text>
+  <path d="M17 221H235" stroke="#2C3D4B"/>
+  <text x="19" y="241" fill="#748C9E" font-size="10" font-weight="600">VERSION</text>
+  <text x="233" y="241" fill="#748C9E" font-size="10" text-anchor="end" font-weight="600">DOWNLOADS</text>
+  <rect x="16" y="249" width="91" height="25" rx="7" fill="#21362E" stroke="#356E52"/>
+  <text x="61" y="267" fill="#8FFBB0" text-anchor="middle" font-size="12" font-weight="700">v0.1.2</text>
+  <text x="233" y="267" fill="#E9F2F9" text-anchor="end" font-size="16" font-weight="700">142</text>
+</g>
+</svg>
