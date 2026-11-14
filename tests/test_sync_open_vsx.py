@@ -277,5 +277,22 @@ class GalleryTest(unittest.TestCase):
             collect_extensions(fake_fetch)
 
 
+    def test_hourly_sync_opens_validated_pr_and_never_pushes_main(self):
+        from pathlib import Path
+        workflow = (Path(__file__).resolve().parents[1] / ".github" / "workflows" /
+                    "sync-open-vsx-profile.yml").read_text(encoding="utf-8")
+        self.assertIn("cron: '17 * * * *'", workflow)
+        self.assertIn("pull-requests: write", workflow)
+        self.assertIn("gh pr create", workflow)
+        self.assertIn("gh pr merge", workflow)
+        self.assertIn("--squash --delete-branch --match-head-commit", workflow)
+        self.assertIn("python -m unittest discover", workflow)
+        self.assertIn("Do not duplicate a pending automated PR", workflow)
+        self.assertIn("git diff --cached --name-only", workflow)
+        self.assertNotIn("git push origin HEAD:main", workflow)
+        self.assertNotIn("git push -f", workflow)
+
+
+
 if __name__ == "__main__":
     unittest.main()
