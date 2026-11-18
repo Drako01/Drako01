@@ -105,13 +105,13 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 <p align="center">
   <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.3.0; 966 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 2,876 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 2,883 downloads" /></a>
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.3.0; 1,220 downloads" /></a>
 </p>
 
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.4.1; 992 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/saturivo"><img src="assets/open-vsx/saturivo.png" width="29%" alt="Saturivo — v0.4.1; 998 downloads" /></a>
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/armotusitio-icons"><img src="assets/open-vsx/armotusitio-icons.png" width="29%" alt="ArmoTuSitio Icons — v0.2.0; 572 downloads" /></a>
   &emsp;
@@ -121,9 +121,9 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 <p align="center">
   <a href="https://open-vsx.org/extension/armotusitio/noditrivo"><img src="assets/open-vsx/noditrivo.png" width="29%" alt="Noditrivo — v0.1.1; 428 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.2.0; 722 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.2.0; 724 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 536 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 540 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
