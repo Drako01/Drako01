@@ -38,6 +38,10 @@ The selection highlighted Saturivo's network security implementation, particular
 
 [**XERJ contributor profile**](https://hub.xerj.org/contributors/Drako01) · [Saturivo repository](https://github.com/Drako01/saturivo) · [XERJ](https://xerj.org/)
 
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/Drako01/badge.svg)](https://hub.xerj.org/contributors/Drako01)
+
+
+
 <a id="professional-focus"></a>
 <img src="assets/sections/professional-focus.svg" alt="Professional focus" height="52" />
 
