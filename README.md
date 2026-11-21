@@ -27,6 +27,17 @@ accelerate implementation while keeping code review, testing, and technical deci
 
 **Open to Backend and Full Stack Software Engineer opportunities.**
 
+<a id="open-source-recognition"></a>
+<img src="assets/sections/open-source-recognition.svg" alt="Open-source recognition" height="52" />
+
+### Saturivo — XERJ Corpus Hub
+
+In November 2026, [Saturivo](https://github.com/Drako01/saturivo), my open-source extension for concurrency and API performance testing, was selected for inclusion in the **XERJ Corpus Hub**, a public reference-code library for AI coding agents.
+
+The selection highlighted Saturivo's network security implementation, particularly the rejection of special-use remote IP addresses and the pinning of validated DNS answers to defend against DNS rebinding. The indexed revision retains its MIT license and attribution to the original author and repository.
+
+[**XERJ contributor profile**](https://hub.xerj.org/contributors/Drako01) · [Saturivo repository](https://github.com/Drako01/saturivo) · [XERJ](https://xerj.org/)
+
 <a id="professional-focus"></a>
 <img src="assets/sections/professional-focus.svg" alt="Professional focus" height="52" />
 
