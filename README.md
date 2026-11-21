@@ -114,11 +114,11 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.3.0; 976 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.3.0; 978 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 2,891 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 2,895 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.3.0; 1,222 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.3.0; 1,224 downloads" /></a>
 </p>
 
 <p align="center">
@@ -134,7 +134,7 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.2.0; 726 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 548 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 554 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
