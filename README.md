@@ -118,9 +118,9 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
 
 <!-- OPEN_VSX_EXTENSIONS:START -->
 <p align="center">
-  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.3.0; 1,102 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/orquestivo"><img src="assets/open-vsx/orquestivo.png" width="29%" alt="Orquestivo — v0.3.0; 1,103 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 3,095 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/probato-pr"><img src="assets/open-vsx/probato-pr.png" width="29%" alt="Probato PR — v1.1.5; 3,096 downloads" /></a>
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/indizivo"><img src="assets/open-vsx/indizivo.png" width="29%" alt="Indizivo — v0.3.0; 1,301 downloads" /></a>
 </p>
@@ -138,7 +138,7 @@ A growing collection of **production-oriented VS Code extensions**, built for CI
   &emsp;
   <a href="https://open-vsx.org/extension/armotusitio/vestigivo"><img src="assets/open-vsx/vestigivo.png" width="29%" alt="Vestigivo RCA — v0.2.0; 816 downloads" /></a>
   &emsp;
-  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 731 downloads" /></a>
+  <a href="https://open-vsx.org/extension/armotusitio/vinculivo"><img src="assets/open-vsx/vinculivo.png" width="29%" alt="Vinculivo — v0.3.0; 733 downloads" /></a>
 </p>
 <!-- OPEN_VSX_EXTENSIONS:END -->
 
